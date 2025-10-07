@@ -9,18 +9,16 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen relative flex items-center bg-gradient-to-b from-background to-secondary/20">
+    <section className="min-h-screen relative flex items-center bg-gradient-to-b from-background to-secondary/20 pt-20">
       <div className="w-full px-6 md:px-12 lg:px-24 grid lg:grid-cols-2 gap-12 items-center">
         {/* Left side - Text */}
         <div
           className={`space-y-6 transition-all duration-1000 ${
-            isVisible
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-10"
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
           <div className="space-y-2">
-            <h1 className="text-hero text-foreground">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground">
               YOUR NAME
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground font-medium">
@@ -59,13 +57,11 @@ const Hero = () => {
 
         {/* Right side - Image */}
         <div
-          className={`relative transition-all duration-1000 delay-300 ${
-            isVisible
-              ? "opacity-100 translate-x-0"
-              : "opacity-0 translate-x-10"
+          className={`relative flex justify-center lg:justify-end pt-8 transition-all duration-1000 delay-300 ${
+            isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
           }`}
         >
-          <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative w-4/5 max-w-md aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
             <img
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800"
               alt="Portrait"
@@ -78,7 +74,9 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-        <span className="text-sm text-muted-foreground font-medium">Scroll</span>
+        <span className="text-sm text-muted-foreground font-medium">
+          Scroll
+        </span>
         <ChevronDown className="w-5 h-5 text-muted-foreground" />
       </div>
     </section>
