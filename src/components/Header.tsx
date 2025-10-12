@@ -1,5 +1,7 @@
+"use client";
+
 import { useEffect, useState } from "react";
-import { X, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -16,11 +18,23 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { label: "About Me", href: "#about" },
-    { label: "Experience", href: "#experience" },
-    { label: "Certificates", href: "#certificates" },
-    { label: "Resume", href: "#resume" },
+    { label: "About Me", href: "/about" },
+    { label: "Experience", href: "/experiences" },
+    { label: "Certificates", href: "/certificates" },
+    { label: "Resume", href: "/resume" },
+    { label: "Research Paper", href: "/resume" },
+    { label: "Contact Me", href: "/resume" },
   ];
+
+  const handleNavigation = (href) => {
+    // Option 1: For Next.js or similar frameworks
+    window.location.href = href;
+
+    // Option 2: Uncomment below if using React Router
+    // navigate(href);
+
+    setMenuOpen(false);
+  };
 
   return (
     <>
@@ -33,15 +47,16 @@ const Header = () => {
       >
         <div className="px-6 md:px-12 lg:px-24 h-20 flex items-center justify-between">
           {/* Logo - slides to top left when scrolled */}
-          <div
-            className={`font-black text-2xl tracking-tighter transition-all duration-700 ${
+          <a
+            href="/"
+            className={`font-black text-2xl tracking-tighter transition-all duration-700 hover:opacity-80 cursor-pointer ${
               scrolled
                 ? "opacity-100 translate-y-0 translate-x-0"
                 : "opacity-0 -translate-y-4 -translate-x-4"
             }`}
           >
             YOUR NAME
-          </div>
+          </a>
 
           {/* Menu Button - appears when scrolled */}
           <button
@@ -75,7 +90,7 @@ const Header = () => {
                 key={item.href}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className={`px-6 py-4 text-lg font-medium text-foreground hover:text-accent transition-all duration-300 rounded-xl hover:bg-secondary/80 hover:translate-x-2 ${
+                className={`px-6 py-4 text-lg font-medium text-foreground hover:text-accent transition-all duration-300 rounded-xl hover:bg-secondary/80 hover:translate-x-2 block ${
                   menuOpen
                     ? "opacity-100 translate-x-0"
                     : "opacity-0 translate-x-8"

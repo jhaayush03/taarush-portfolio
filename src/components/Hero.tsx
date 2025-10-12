@@ -1,3 +1,4 @@
+"useclient";
 import { useEffect, useState } from "react";
 import { ChevronDown, Linkedin, Instagram, Twitter } from "lucide-react";
 
