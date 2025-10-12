@@ -21,9 +21,9 @@ const Header = () => {
     { label: "About Me", href: "/about" },
     { label: "Experience", href: "/experiences" },
     { label: "Certificates", href: "/certificates" },
-    { label: "Resume", href: "/resume" },
-    { label: "Research Paper", href: "/resume" },
-    { label: "Contact Me", href: "/resume" },
+    { label: "Resume", href: "/resumes" },
+    { label: "Research Paper", href: "/researchpaper" },
+    { label: "Extracurricular Activities", href: "/extraxcurricular" },
   ];
 
   const handleNavigation = (href) => {
@@ -55,7 +55,7 @@ const Header = () => {
                 : "opacity-0 -translate-y-4 -translate-x-4"
             }`}
           >
-            YOUR NAME
+            Amritraj
           </a>
 
           {/* Menu Button - appears when scrolled */}

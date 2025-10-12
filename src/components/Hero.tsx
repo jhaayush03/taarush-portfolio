@@ -20,7 +20,7 @@ const Hero = () => {
         >
           <div className="space-y-2">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground">
-              YOUR NAME
+              Amritraj
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground font-medium">
               Computer Science at Stanford University

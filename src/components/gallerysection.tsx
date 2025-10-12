@@ -20,153 +20,53 @@ const GallerySection = () => {
   const galleryItems = [
     {
       id: 1,
-      title: "Urban Design System",
-      category: "design",
-      image:
-        "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=300&h=300&fit=crop",
-      url: "/gallery/urban-design",
-      views: "2.3K",
-      likes: "456",
-    },
-    {
-      id: 2,
-      title: "Mobile Experience",
+      title: "Resume",
       category: "mobile",
       image:
         "https://images.unsplash.com/photo-1611532736579-6b16e2b50449?w=300&h=300&fit=crop",
-      url: "/gallery/mobile-ux",
+      url: "/resumes",
       views: "1.8K",
       likes: "389",
     },
     {
-      id: 3,
-      title: "E-Commerce Platform",
+      id: 2,
+      title: "Certificates",
       category: "web",
       image:
-        "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=300&h=300&fit=crop",
-      url: "/gallery/ecommerce",
+        "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=300&h=300&fit=crop",
+      url: "/certificates",
       views: "3.1K",
       likes: "523",
     },
     {
-      id: 4,
-      title: "Brand Identity",
+      id: 3,
+      title: "Experiences",
       category: "branding",
       image:
         "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=300&h=300&fit=crop",
-      url: "/gallery/branding",
+      url: "/experiences",
       views: "2.7K",
       likes: "512",
     },
     {
-      id: 5,
-      title: "Analytics Dashboard",
+      id: 4,
+      title: "Research Paper",
       category: "web",
       image:
-        "https://images.unsplash.com/photo-1460925895917-adf4e11526c6?w=300&h=300&fit=crop",
-      url: "/gallery/analytics",
+        "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=300&h=300&fit=crop",
+      url: "/researchpaper",
       views: "2.9K",
       likes: "467",
     },
     {
-      id: 6,
-      title: "Packaging Design",
-      category: "branding",
-      image:
-        "https://images.unsplash.com/photo-1520763185298-1b434c919eba?w=300&h=300&fit=crop",
-      url: "/gallery/packaging",
-      views: "1.5K",
-      likes: "298",
-    },
-    {
-      id: 7,
-      title: "3D Product Render",
-      category: "design",
-      image:
-        "https://images.unsplash.com/photo-1523875335684-37898b6baf30?w=300&h=300&fit=crop",
-      url: "/gallery/product-3d",
-      views: "4.2K",
-      likes: "687",
-    },
-    {
-      id: 8,
-      title: "Motion Graphics",
-      category: "design",
-      image:
-        "https://images.unsplash.com/photo-1533391304391-01d57cff058f?w=300&h=300&fit=crop",
-      url: "/gallery/motion",
-      views: "3.4K",
-      likes: "612",
-    },
-    {
-      id: 9,
-      title: "Website Redesign",
+      id: 5,
+      title: "Extracurricular Activities",
       category: "web",
       image:
-        "https://images.unsplash.com/photo-1559654606-ec26f98a36ab?w=300&h=300&fit=crop",
-      url: "/gallery/website",
-      views: "2.1K",
-      likes: "401",
-    },
-    {
-      id: 10,
-      title: "Social Media Campaign",
-      category: "mobile",
-      image:
-        "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=300&h=300&fit=crop",
-      url: "/gallery/social",
-      views: "5.1K",
-      likes: "892",
-    },
-    {
-      id: 11,
-      title: "UI Component Library",
-      category: "design",
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=300&fit=crop",
-      url: "/gallery/components",
-      views: "1.9K",
-      likes: "345",
-    },
-    {
-      id: 12,
-      title: "Photography Portfolio",
-      category: "branding",
-      image:
-        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&h=300&fit=crop",
-      url: "/gallery/photography",
-      views: "3.8K",
-      likes: "734",
-    },
-    {
-      id: 13,
-      title: "App Interface",
-      category: "mobile",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
-      url: "/gallery/app-interface",
-      views: "2.5K",
-      likes: "421",
-    },
-    {
-      id: 14,
-      title: "Branding Project",
-      category: "branding",
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop",
-      url: "/gallery/branding-2",
-      views: "1.7K",
-      likes: "356",
-    },
-    {
-      id: 15,
-      title: "Web Design",
-      category: "web",
-      image:
-        "https://images.unsplash.com/photo-1517849845537-1d51a20414de?w=300&h=300&fit=crop",
-      url: "/gallery/web-design",
-      views: "3.2K",
-      likes: "598",
+        "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=300&h=300&fit=crop",
+      url: "/extraxcurricular",
+      views: "3.1K",
+      likes: "523",
     },
   ];
 
@@ -220,46 +120,6 @@ const GallerySection = () => {
             <p className="text-lg text-slate-600">
               Explore my latest work and creative projects
             </p>
-          </div>
-
-          {/* Search and Filter Section */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-            {/* Search Bar */}
-            <div className="md:col-span-2 relative group">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-slate-900 transition-colors" />
-              <input
-                type="text"
-                placeholder="Search gallery..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-400 focus:bg-white transition-all duration-300"
-              />
-            </div>
-
-            {/* Results Count */}
-            <div className="flex items-center justify-center px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg">
-              <span className="text-slate-700">
-                {filteredItems.length}{" "}
-                <span className="text-slate-500">items</span>
-              </span>
-            </div>
-          </div>
-
-          {/* Category Filter */}
-          <div className="mt-6 flex flex-wrap gap-2">
-            {categories.map((category) => (
-              <button
-                key={category.name}
-                onClick={() => setSelectedCategory(category.name)}
-                className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
-                  selectedCategory === category.name
-                    ? "bg-slate-900 text-white border border-slate-900"
-                    : "bg-white text-slate-700 border border-slate-300 hover:border-slate-400 hover:bg-slate-50"
-                }`}
-              >
-                {category.label}
-              </button>
-            ))}
           </div>
         </div>
       </div>

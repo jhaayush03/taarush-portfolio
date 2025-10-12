@@ -30,15 +30,13 @@ const About = () => {
       <div className="max-w-6xl mx-auto">
         <div
           className={`transition-all duration-1000 ${
-            isVisible
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-10"
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
           <h2 className="text-display mb-12">
-            Hi, I'm <span className="gradient-text">Your Name!</span>
+            Hi, I'm <span className="gradient-text">Amritraj!</span>
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-foreground/90">
@@ -47,12 +45,12 @@ const About = () => {
                 problems and create intuitive user experiences.
               </p>
               <p className="text-lg leading-relaxed text-foreground/90">
-                Currently studying Computer Science at Stanford University,
-                I'm passionate about creating innovative solutions that make
+                Currently studying Computer Science at Stanford University, I'm
+                passionate about creating innovative solutions that make
                 technology more accessible and impactful.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-6">
               {[
                 { label: "AI & ML", value: "Advanced" },
