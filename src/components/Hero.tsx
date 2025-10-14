@@ -64,7 +64,7 @@ const Hero = () => {
         >
           <div className="relative w-4/5 max-w-md aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800"
+              src="/profile.jpg"
               alt="Portrait"
               className="w-full h-full object-cover"
             />
