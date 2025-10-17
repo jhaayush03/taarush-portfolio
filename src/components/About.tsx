@@ -40,23 +40,25 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-foreground/90">
-                I build systems at the intersection of people, data and
-                technology—combining AI, XR and product design to solve complex
-                problems and create intuitive user experiences.
+                I love building ideas that connect science, creativity, and
+                real-world impact. From designing tech to make city systems
+                safer to creating flood detection tools, I’m always curious
+                about how innovation can solve everyday problems.
               </p>
               <p className="text-lg leading-relaxed text-foreground/90">
-                Currently studying Computer Science at Stanford University, I'm
-                passionate about creating innovative solutions that make
-                technology more accessible and impactful.
+                I enjoy exploring physics, coding, and design, and I hope to
+                study engineering to keep pushing boundaries between technology
+                and people. For me, learning is about experimenting, improving,
+                and finding ways to make a difference through invention.
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-6">
               {[
-                { label: "AI & ML", value: "Advanced" },
-                { label: "XR Design", value: "Expert" },
-                { label: "Full Stack", value: "Proficient" },
-                { label: "Product Design", value: "Advanced" },
+                { label: "", value: "Python" },
+                { label: "", value: "3D Design - CAD" },
+                { label: "", value: "Arduino" },
+                { label: "", value: "Robotics" },
               ].map((skill, index) => (
                 <div
                   key={skill.label}
