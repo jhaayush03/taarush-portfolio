@@ -38,6 +38,12 @@ const Resume = () => {
     window.open(resumePdfPath, "_blank");
   };
 
+  const stats = [
+    { value: "", label: "" },
+    { value: "", label: "" },
+    { value: "", label: "" },
+  ];
+
   return (
     <section
       id="resume"
