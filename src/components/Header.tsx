@@ -22,7 +22,6 @@ const Header = () => {
     { label: "Certificates", href: "/certificates" },
     { label: "Resume", href: "/resumes" },
     { label: "Research Paper", href: "/researchpaper" },
-    { label: "Extracurricular Activities", href: "/extraxcurricular" },
   ];
 
   const handleNavigation = (href) => {

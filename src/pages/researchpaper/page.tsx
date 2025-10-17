@@ -7,73 +7,56 @@ import {
   User,
   BookOpen,
   Share2,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 
 const ResearchPaperPage = () => {
   const [showPdfViewer, setShowPdfViewer] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [currentPaperIndex, setCurrentPaperIndex] = useState(0);
 
-  const researchPaper = {
-    id: 1,
-    title:
-      "Enhancing User Experience Through AI-Driven Personalization in Web Design",
-    authors: ["Omisaa Bansal", "Dr. Rajesh Kumar", "Prof. Priya Singh"],
-    publicationDate: "March 15, 2024",
-    journal: "International Journal of Web and Digital Design",
-    volume: "12",
-    issue: "2",
-    pages: "145-178",
-    doi: "10.1234/ijwd.2024.12.2.145",
-    abstract:
-      "This research paper explores the integration of artificial intelligence and machine learning algorithms in personalizing user experiences in modern web design. Our study analyzes 50+ websites and conducts user testing with 500+ participants to understand the impact of AI-driven personalization on user engagement, conversion rates, and overall satisfaction. The findings demonstrate a 45% increase in user engagement and a 32% improvement in conversion rates when AI personalization is properly implemented. We present a comprehensive framework for designers and developers to effectively integrate AI personalization into their projects while maintaining ethical standards and user privacy. Our work contributes to the growing body of knowledge on human-computer interaction and provides practical guidelines for industry practitioners.",
-    keywords: [
-      "AI Personalization",
-      "User Experience",
-      "Web Design",
-      "Machine Learning",
-      "Conversion Optimization",
-      "User Engagement",
-    ],
-    sections: [
-      {
-        title: "1. Introduction",
-        content:
-          "The rapid advancement in artificial intelligence has revolutionized how web designers approach user experience. Traditional design methods rely on static layouts and generic interactions. However, AI-driven personalization enables dynamic, adaptive interfaces that respond to individual user preferences and behaviors.",
-      },
-      {
-        title: "2. Literature Review",
-        content:
-          "Previous studies have shown the effectiveness of personalization in e-commerce platforms. However, limited research exists on the broader application of AI personalization across different types of web applications and its long-term impact on user behavior and satisfaction.",
-      },
-      {
-        title: "3. Methodology",
-        content:
-          "We conducted a mixed-methods study involving quantitative analysis of user interactions on 50+ websites and qualitative interviews with 500+ participants. Our AI models were built using neural networks and decision tree algorithms to predict user preferences.",
-      },
-      {
-        title: "4. Results & Findings",
-        content:
-          "Our results indicate significant improvements in key performance indicators when AI personalization is implemented. User engagement increased by 45%, conversion rates improved by 32%, and user satisfaction scores rose from 6.2/10 to 8.1/10.",
-      },
-      {
-        title: "5. Discussion",
-        content:
-          "The findings suggest that AI-driven personalization, when implemented ethically and with proper privacy considerations, can significantly enhance web user experiences. However, transparency and user control remain critical factors in user acceptance.",
-      },
-      {
-        title: "6. Conclusion & Future Work",
-        content:
-          "This research demonstrates the potential of AI in web design and offers a framework for practitioners. Future research should explore the long-term effects of personalization and develop better methods for maintaining user privacy while delivering personalized experiences.",
-      },
-    ],
-    citations: [
-      "Smith, J. (2023). Machine Learning in UX Design. Design Review, 10(4), 45-62.",
-      "Johnson, M., & Lee, S. (2022). Personalization frameworks for modern web. Tech Journal, 8(1), 12-28.",
-      "Williams, R. (2021). AI and user behavior analysis. Data Science Quarterly, 5(3), 89-105.",
-      "Brown, A., Chen, L., & Davis, K. (2023). Ethical AI in digital design. Ethics Review, 15(2), 34-51.",
-    ],
-    pdfUrl: "/research-papers/ai-personalization-web-design.pdf",
-  };
+  const researchPapers = [
+    {
+      id: 1,
+      title: "Automation & Robotics Adoption in Delhi-NCR Factories",
+      authors: ["Amritraj Lamba"],
+      publicationDate: "January 2025",
+      journal: "LEX LOCALIS-JOURNAL OF LOCAL SELF-GOVERNMENT",
+      volume: "23",
+      pages: "17",
+      abstract:
+        "Human-Robot  Collaboration  (HRC)  is  reshaping various  industries  by  merging  human  adapt-ability, decision making skills, and dexterity with the accuracy, efficiency and cost effectiveness of robotic systems.This research explores how the integration of HRC influences efficiency of operations in factories, workforce dynamics, and technology adoption in manufacturing envi-ronments.Focusing on a range of factories from fully manual to those with lots of automation, this study analyses the opportunities and challenges presented by  collaborative  robotics  in  real  world  industrial  settings.The  research  methodology  was  primarily qualitative, supported by some quantitative data, and involved conducting structured interviews and surveys with  per-sonnel  and  high  level  staff  across  four  factories  in  the  Delhi-NCR  region.The  data  collection focused  on  aspects  such as labor  challenges,  order tracking, automation  barriers, sustainability  efforts, and future technology plans. By comparing experiences from different automation con-texts, the study identifies patterns  and  contrasts  in  how  factories  manage  the  balance  between  manual  processes  and  collaborative technologies.The  results  show  that  the  automation  levels  show  a  spectrum  of  contrasting  differences.In factories  solely  functioning  manually,  there  are  difficultieswithordertrackinginefficiencies,highlaborcosts,andlowsustainability.Theseoper-ations are overreliant on outdated and inefficient systems and it is difficult to scale production. Semi-automated facilities are in between, combining high-end tools and CNC machines with labour and manual variations.There have been some gains in accuracy and reduced manual effort,buttherearestillbarriers.Despitethedifferencesbetweenfactoriesandtheirindustries,  there  were some major emerging cross-cut cutting themes: the need for automation strategies, human-centricdesignandcustomyetscalableinfrastructure.Researchershaveemphasizedthat successful Human-Robot Collaboration (HRC)  does  not  only  depend  on  technologically  imple-mentingautomation.SuccessfulHRCdependsonretraining, ergonomicsandcostmanagement. In summary, human-robot collaboration has the potential to be transformative in regions like DelhiNCR,butitssuccessisreliantontechnology,laborpractice,andlong-termadaptability",
+      keywords: ["Human-robot", "Automation", "Artificial Intelligence"],
+      pdfUrl:
+        "https://lex-localis.org/index.php/LexLocalis/article/view/801630/2078",
+    },
+    {
+      id: 2,
+      title:
+        "Assessing Coral Reef Degradation And Its Impact On Coastal Erosion Around Indian Shores Using Remote Sensing And GIS-Based Modelling",
+      authors: ["Amritraj Lamba"],
+      publicationDate: " 2025",
+      journal: "Journal of Web Intelligence and Analytics",
+      volume: "11",
+      issue: "",
+      pages: "23",
+      doi: "",
+      abstract:
+        "This investigation presents a comprehensive evaluation of coral reef degradation and its consequential impacts on coastal erosion patterns along Indian coastlines through integrated remote sensing technologies and Geographic Information System (GIS) modelling approaches. The research encompasses four critical reef regions: Gulf of Mannar and Palk Bay, Lakshadweep Islands, Andaman and Nicobar Islands, and Gulf of Kachchh. Multi-temporal satellite imagery spanning 2010–2024 was analysed using advanced machinelearning algorithms to classify coral health status and quantify shoreline dynamics through the Digital Shoreline Analysis System methodology.The findings demonstrate substantial coral cover reductions directly correlated with increased coastal erosion rates, where degraded reef systems exhibit diminished wave attenuation capabilities and reduced natural coastal protection services.  Predictive  vulnerability  models  incorporating  reef  health  parameters  reveal  heightened  erosion  risks, particularly following significant bleaching episodes in 2016 and 2023–2024. Economic assessment estimates coral reef coastal protection services between ₹8.7–23.4 crores per kilometre annually, establishing the cost-effectiveness of conservation strategies over engineered alternatives.This study delivers actionable recommendations for integrated coastal zone management, emphasizing ecosystem-based adaptation methodologies and Payment for Ecosystem Services frameworks to maintain reef resilience and support coastal community livelihoods under escalating climate pressures.",
+      keywords: [
+        "Coral Reef Degradation",
+        "Coastal Erosion Assesment",
+        "Remote Sensing Applications",
+        "GIS-based Modelling",
+        "Ecosystem Service Valuation",
+      ],
+
+      pdfUrl: "https://theaspd.com/index.php/ijes/article/view/9467/6796",
+    },
+  ];
+
+  const researchPaper = researchPapers[currentPaperIndex];
 
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -105,14 +88,45 @@ const ResearchPaperPage = () => {
     }
   };
 
+  const goToNextPaper = () => {
+    setCurrentPaperIndex((prev) => (prev + 1) % researchPapers.length);
+  };
+
+  const goToPreviousPaper = () => {
+    setCurrentPaperIndex(
+      (prev) => (prev - 1 + researchPapers.length) % researchPapers.length
+    );
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Header Section */}
       <div className="bg-white border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-24 py-16">
-          <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-8 bg-gradient-to-r from-slate-900 via-indigo-800 to-slate-900 bg-clip-text text-transparent">
-            Research Paper
-          </h1>
+          <div className="flex items-center justify-between mb-8">
+            <h1 className="text-5xl md:text-6xl font-black tracking-tight bg-gradient-to-r from-slate-900 via-indigo-800 to-slate-900 bg-clip-text text-transparent">
+              Research Papers
+            </h1>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={goToPreviousPaper}
+                className="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 transition-colors"
+                aria-label="Previous paper"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <span className="text-sm font-semibold text-slate-600 px-3">
+                {currentPaperIndex + 1} / {researchPapers.length}
+              </span>
+              <button
+                onClick={goToNextPaper}
+                className="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 transition-colors"
+                aria-label="Next paper"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
 
           {/* Paper Info Card */}
           <div className="bg-gradient-to-br from-indigo-50 to-blue-50 border border-indigo-200 rounded-xl p-8 mb-8">

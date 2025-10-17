@@ -58,16 +58,6 @@ const GallerySection = () => {
       views: "2.9K",
       likes: "467",
     },
-    {
-      id: 5,
-      title: "Extracurricular Activities",
-      category: "web",
-      image:
-        "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=300&h=300&fit=crop",
-      url: "/extraxcurricular",
-      views: "3.1K",
-      likes: "523",
-    },
   ];
 
   const categories = [

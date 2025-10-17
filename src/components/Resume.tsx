@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { Download, FileText } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const Resume = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef(null);
+
+  // Replace this with your actual PDF path
+  const resumePdfPath = "/resume.pdf";
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -23,11 +25,24 @@ const Resume = () => {
     return () => observer.disconnect();
   }, []);
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = resumePdfPath;
+    link.download = "Resume_Amritraj_Lamba.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const handleView = () => {
+    window.open(resumePdfPath, "_blank");
+  };
+
   return (
     <section
       id="resume"
       ref={sectionRef}
-      className="section-padding bg-gradient-to-b from-secondary/30 to-background"
+      className="py-20 px-6 bg-gradient-to-b from-slate-50 to-white"
     >
       <div className="max-w-4xl mx-auto">
         <div
@@ -35,37 +50,38 @@ const Resume = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-accent to-purple-600 mb-8 shadow-lg">
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-600 mb-8 shadow-lg">
             <FileText className="w-10 h-10 text-white" />
           </div>
 
-          <h2 className="text-display mb-6">Resume</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
+          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-slate-900 via-indigo-800 to-slate-900 bg-clip-text text-transparent">
+            Resume
+          </h2>
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-10">
             Download my complete resume to learn more about my experience,
             skills, and achievements.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button
-              size="lg"
-              className="gap-2 text-lg px-8 py-6 bg-gradient-to-r from-accent to-purple-600 hover:shadow-lg hover:scale-105 transition-all duration-300"
+            <button
+              onClick={handleDownload}
+              className="flex items-center gap-2 text-lg px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
               <Download className="w-5 h-5" />
               Download Resume
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="gap-2 text-lg px-8 py-6 border-2 hover:scale-105 transition-all duration-300"
+            </button>
+            <button
+              onClick={handleView}
+              className="flex items-center gap-2 text-lg px-8 py-4 bg-white border-2 border-slate-300 text-slate-900 font-semibold rounded-lg hover:border-indigo-600 hover:scale-105 transition-all duration-300"
             >
               <FileText className="w-5 h-5" />
               View Online
-            </Button>
+            </button>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-border">
-            {[].map((stat, index) => (
+          <div className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-slate-200">
+            {stats.map((stat, index) => (
               <div
                 key={stat.label}
                 className={`transition-all duration-1000 ${
@@ -75,10 +91,10 @@ const Resume = () => {
                 }`}
                 style={{ transitionDelay: `${(index + 1) * 150}ms` }}
               >
-                <div className="text-4xl font-black gradient-text mb-2">
+                <div className="text-4xl font-black bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">
                   {stat.value}
                 </div>
-                <div className="text-sm text-muted-foreground font-medium">
+                <div className="text-sm text-slate-600 font-medium">
                   {stat.label}
                 </div>
               </div>

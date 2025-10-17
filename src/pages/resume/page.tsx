@@ -9,7 +9,6 @@ import {
   Briefcase,
   BookOpen,
   Code,
-  FileText,
   ChevronDown,
 } from "lucide-react";
 
@@ -30,7 +29,7 @@ const ResumePage = () => {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href = "/resume.pdf";
-    link.download = "Resume_Omisaa_Bansal.pdf";
+    link.download = "Resume_Amritraj_Lamba.pdf";
     link.click();
   };
 
@@ -45,13 +44,13 @@ const ResumePage = () => {
       icon: Mail,
       label: "Email",
       value: "lamba.amritraj@gmail.com",
-      href: "mailto:lamba.amritraj@email.com",
+      href: "mailto:lamba.amritraj@gmail.com",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       value: "/in/Amritraj_Lamba",
-      href: "https://linkedin.com/in/omisaabansal",
+      href: "https://linkedin.com/in/Amritraj_Lamba",
     },
   ];
 
@@ -68,7 +67,6 @@ const ResumePage = () => {
       field: "10/10 A*",
       institution: "IGCSE",
       year: "2023-24",
-
       details: [
         "School Topper in Additional Mathematics",
         "School Topper in Chemistry",
@@ -79,8 +77,7 @@ const ResumePage = () => {
       field: "Gurugram",
       institution: " Heritage International Xperiental Learning",
       year: "",
-
-      details: [""],
+      details: [],
     },
   ];
 
@@ -216,7 +213,7 @@ const ResumePage = () => {
       details: ["Certificate of Distinction"],
     },
     {
-      title: "Euler‘s Circle",
+      title: "Euler's Circle",
       description: "",
       technologies: ["June-July 2024"],
       details: [
@@ -239,7 +236,7 @@ const ResumePage = () => {
       title: "International Maths Kangaroo Competition",
       description: "",
       technologies: ["2023"],
-      details: ["Sikver Medal"],
+      details: ["Silver Medal"],
     },
     {
       title: "International Junior Honor Society",
@@ -287,7 +284,7 @@ const ResumePage = () => {
               {subtitle}
             </p>
           )}
-          {details && (
+          {details && details.length > 0 && (
             <ul className="mt-3 space-y-2">
               {details.map((detail, idx) => (
                 <li
@@ -386,7 +383,9 @@ const ResumePage = () => {
                 <SectionBox
                   key={idx}
                   title={edu.degree}
-                  subtitle={`${edu.institution} (${edu.year}) `}
+                  subtitle={`${edu.institution}${
+                    edu.year ? ` (${edu.year})` : ""
+                  }`}
                   details={edu.details}
                   icon={BookOpen}
                 />
@@ -417,7 +416,9 @@ const ResumePage = () => {
                 <SectionBox
                   key={idx}
                   title={exp.title}
-                  subtitle={`${exp.company} • ${exp.period} • ${exp.type}`}
+                  subtitle={`${exp.company} • ${exp.period}${
+                    exp.type ? ` • ${exp.type}` : ""
+                  }`}
                   details={exp.details}
                   icon={Briefcase}
                 />
@@ -526,49 +527,6 @@ const ResumePage = () => {
                     ))}
                   </div>
                 </div>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* Certificates Section */}
-        <div className="mb-12">
-          <div
-            onClick={() => toggleSection("certificates")}
-            className="flex items-center gap-3 mb-6 cursor-pointer group"
-          >
-            <FileText className="w-6 h-6 text-indigo-600" />
-            <h2 className="text-3xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
-              Certificates
-            </h2>
-            <ChevronDown
-              className={`w-6 h-6 text-slate-400 transition-transform duration-300 ${
-                expandedSections.certificates ? "rotate-180" : ""
-              }`}
-            />
-          </div>
-          {expandedSections.certificates !== false && (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {certificates.map((cert, idx) => (
-                <a
-                  key={idx}
-                  href={cert.url}
-                  className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md hover:border-indigo-300 transition-all duration-300 group"
-                >
-                  <div className="flex items-start gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-yellow-100 to-orange-100 flex items-center justify-center flex-shrink-0 group-hover:shadow-md">
-                      <Award className="w-5 h-5 text-orange-600" />
-                    </div>
-                    <h3 className="text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
-                      {cert.title}
-                    </h3>
-                  </div>
-                  <p className="text-sm text-slate-600 mb-2">{cert.issuer}</p>
-                  <p className="text-xs text-slate-500">{cert.date}</p>
-                  <p className="text-indigo-600 text-sm font-semibold mt-3 group-hover:translate-x-1 transition-transform">
-                    View Certificate →
-                  </p>
-                </a>
               ))}
             </div>
           )}
