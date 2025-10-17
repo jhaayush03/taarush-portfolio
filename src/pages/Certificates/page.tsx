@@ -1,0 +1,404 @@
+import { useState } from "react";
+import {
+  Download,
+  Eye,
+  Award,
+  FileText,
+  ExternalLink,
+  Search,
+} from "lucide-react";
+
+const CertificatesPage = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState("all");
+
+  const handleDownloadAllCertificates = () => {
+    const link = document.createElement("a");
+    link.href = "/certificates-all.pdf";
+    link.download = "All_Certificates_Omisaa_Bansal.pdf";
+    link.click();
+  };
+
+  const certificates = [
+    {
+      id: 1,
+      title: "Google UX Design Certificate",
+      issuer: "Google",
+      date: "June 2023",
+      category: "design",
+      image:
+        "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=600&fit=crop",
+      description:
+        "Completed comprehensive UX design course covering research, wireframing, and prototyping",
+      skills: ["User Research", "Wireframing", "Prototyping", "Figma"],
+      pdfUrl: "/certificates/google-ux.pdf",
+    },
+    {
+      id: 2,
+      title: "Advanced React Development",
+      issuer: "Udemy",
+      date: "August 2023",
+      category: "development",
+      image:
+        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=600&fit=crop",
+      description:
+        "Master React with hooks, context API, and modern best practices",
+      skills: ["React", "JavaScript", "Redux", "Testing"],
+      pdfUrl: "/certificates/react.pdf",
+    },
+    {
+      id: 3,
+      title: "AWS Certified Cloud Practitioner",
+      issuer: "Amazon Web Services",
+      date: "May 2023",
+      category: "cloud",
+      image:
+        "https://images.unsplash.com/photo-1516321318423-f06f70504504?w=600&h=600&fit=crop",
+      description:
+        "Demonstrated fundamental knowledge of AWS cloud services and architecture",
+      skills: ["AWS", "Cloud Computing", "Infrastructure", "Security"],
+      pdfUrl: "/certificates/aws.pdf",
+    },
+    {
+      id: 4,
+      title: "JavaScript Algorithms & Data Structures",
+      issuer: "FreeCodeCamp",
+      date: "April 2023",
+      category: "development",
+      image:
+        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=600&fit=crop",
+      description:
+        "Comprehensive course on algorithms, data structures, and problem-solving",
+      skills: [
+        "JavaScript",
+        "Algorithms",
+        "Data Structures",
+        "Problem Solving",
+      ],
+      pdfUrl: "/certificates/algorithms.pdf",
+    },
+    {
+      id: 5,
+      title: "UI/UX Design Specialization",
+      issuer: "Coursera",
+      date: "March 2023",
+      category: "design",
+      image:
+        "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=600&fit=crop",
+      description:
+        "Complete specialization covering UX fundamentals, visual design, and interaction design",
+      skills: ["UI Design", "UX Principles", "Design Tools", "User Testing"],
+      pdfUrl: "/certificates/coursera-ux.pdf",
+    },
+    {
+      id: 6,
+      title: "Full Stack Web Development",
+      issuer: "Codecademy",
+      date: "February 2023",
+      category: "development",
+      image:
+        "https://images.unsplash.com/photo-1517849845537-1d51a20414de?w=600&h=600&fit=crop",
+      description:
+        "End-to-end web development with frontend and backend technologies",
+      skills: ["HTML/CSS", "JavaScript", "Node.js", "MongoDB"],
+      pdfUrl: "/certificates/fullstack.pdf",
+    },
+    {
+      id: 7,
+      title: "Figma Master Course",
+      issuer: "DesignCode",
+      date: "January 2023",
+      category: "design",
+      image:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=600&fit=crop",
+      description: "Advanced Figma techniques for professional UI/UX designers",
+      skills: ["Figma", "Design Systems", "Prototyping", "Collaboration"],
+      pdfUrl: "/certificates/figma.pdf",
+    },
+    {
+      id: 8,
+      title: "Digital Marketing Fundamentals",
+      issuer: "Google Digital Garage",
+      date: "December 2022",
+      category: "marketing",
+      image:
+        "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=600&fit=crop",
+      description:
+        "Complete guide to digital marketing, SEO, and content strategy",
+      skills: ["Digital Marketing", "SEO", "Analytics", "Content Strategy"],
+      pdfUrl: "/certificates/marketing.pdf",
+    },
+    {
+      id: 9,
+      title: "Mobile App Development with Flutter",
+      issuer: "Udemy",
+      date: "November 2022",
+      category: "development",
+      image:
+        "https://images.unsplash.com/photo-1611532736579-6b16e2b50449?w=600&h=600&fit=crop",
+      description: "Build cross-platform mobile apps using Flutter and Dart",
+      skills: ["Flutter", "Dart", "Mobile Development", "Firebase"],
+      pdfUrl: "/certificates/flutter.pdf",
+    },
+  ];
+
+  const categories = [
+    { name: "all", label: "All Certificates", icon: Award },
+    { name: "design", label: "Design", icon: Award },
+    { name: "development", label: "Development", icon: Award },
+    { name: "cloud", label: "Cloud", icon: Award },
+    { name: "marketing", label: "Marketing", icon: Award },
+  ];
+
+  const filteredCertificates = certificates.filter((cert) => {
+    const matchesCategory =
+      selectedCategory === "all" || cert.category === selectedCategory;
+    const matchesSearch =
+      cert.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      cert.issuer.toLowerCase().includes(searchTerm.toLowerCase());
+    return matchesCategory && matchesSearch;
+  });
+
+  const handleViewCertificate = (pdfUrl) => {
+    window.open(pdfUrl, "_blank");
+  };
+
+  const handleDownloadCertificate = (title, pdfUrl) => {
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = `${title}.pdf`;
+    link.click();
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+      {/* Header Section */}
+      <div className="bg-white border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-16">
+          <h1 className="text-6xl md:text-7xl font-black tracking-tight mb-4 bg-gradient-to-r from-slate-900 via-indigo-800 to-slate-900 bg-clip-text text-transparent">
+            Certificates
+          </h1>
+          <p className="text-lg text-slate-600 max-w-2xl">
+            Professional certifications and course completions showcasing
+            continuous learning and expertise across design, development, and
+            technology.
+          </p>
+
+          {/* Download All Certificates Button */}
+          <button
+            onClick={handleDownloadAllCertificates}
+            className="mt-8 flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-indigo-300 transform hover:scale-105 transition-all duration-300"
+          >
+            <Download className="w-5 h-5" />
+            View All Certificates (PDF)
+          </button>
+        </div>
+      </div>
+
+      {/* Search and Filter Section */}
+      <div className="bg-white border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-8">
+          {/* Search Bar */}
+          <div className="relative mb-6 group">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-slate-900 transition-colors" />
+            <input
+              type="text"
+              placeholder="Search certificates by title or issuer..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:border-indigo-400 focus:bg-white transition-all duration-300"
+            />
+          </div>
+
+          {/* Category Filter */}
+          <div className="flex flex-wrap gap-3">
+            {categories.map((category) => (
+              <button
+                key={category.name}
+                onClick={() => setSelectedCategory(category.name)}
+                className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 ${
+                  selectedCategory === category.name
+                    ? "bg-indigo-600 text-white border border-indigo-600 shadow-md"
+                    : "bg-slate-100 text-slate-700 border border-slate-300 hover:border-indigo-400 hover:bg-slate-50"
+                }`}
+              >
+                <Award className="w-4 h-4" />
+                {category.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Certificates Grid */}
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-16">
+        {filteredCertificates.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredCertificates.map((cert, index) => (
+              <div
+                key={cert.id}
+                className="group"
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                {/* Certificate Card */}
+                <div className="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-indigo-300 transition-all duration-300 hover:shadow-lg">
+                  {/* Image Container */}
+                  <div className="relative overflow-hidden bg-gradient-to-br from-slate-100 to-slate-50 aspect-square">
+                    <img
+                      src={cert.image}
+                      alt={cert.title}
+                      className={`w-full h-full object-cover transition-all duration-500 ${
+                        hoveredIndex === index
+                          ? "scale-105 brightness-75"
+                          : "scale-100 brightness-90"
+                      }`}
+                    />
+
+                    {/* Overlay */}
+                    <div
+                      className={`absolute inset-0 bg-black transition-all duration-300 ${
+                        hoveredIndex === index ? "opacity-40" : "opacity-0"
+                      }`}
+                    />
+
+                    {/* Action Buttons on Hover */}
+                    <div
+                      className={`absolute inset-0 flex items-center justify-center gap-4 transition-all duration-300 ${
+                        hoveredIndex === index ? "opacity-100" : "opacity-0"
+                      }`}
+                    >
+                      <button
+                        onClick={() => handleViewCertificate(cert.pdfUrl)}
+                        className="flex items-center gap-2 px-4 py-2 bg-white text-slate-900 font-semibold rounded-lg hover:bg-indigo-50 transition-all duration-300 transform hover:scale-105"
+                      >
+                        <Eye className="w-4 h-4" />
+                        View
+                      </button>
+                      <button
+                        onClick={() =>
+                          handleDownloadCertificate(cert.title, cert.pdfUrl)
+                        }
+                        className="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105"
+                      >
+                        <Download className="w-4 h-4" />
+                        Download
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Certificate Info */}
+                  <div className="p-6">
+                    <div className="flex items-start justify-between mb-3">
+                      <div>
+                        <h3 className="text-lg font-bold text-slate-900 line-clamp-2">
+                          {cert.title}
+                        </h3>
+                        <p className="text-sm text-indigo-600 font-semibold mt-1">
+                          {cert.issuer}
+                        </p>
+                      </div>
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-yellow-100 to-orange-100 flex items-center justify-center flex-shrink-0">
+                        <Award className="w-5 h-5 text-orange-600" />
+                      </div>
+                    </div>
+
+                    {/* Date */}
+                    <p className="text-xs text-slate-500 mb-4">{cert.date}</p>
+
+                    {/* Description */}
+                    <p className="text-sm text-slate-600 mb-4 line-clamp-2">
+                      {cert.description}
+                    </p>
+
+                    {/* Skills Tags */}
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {cert.skills.slice(0, 2).map((skill, i) => (
+                        <span
+                          key={i}
+                          className="px-2 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                      {cert.skills.length > 2 && (
+                        <span className="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-semibold rounded">
+                          +{cert.skills.length - 2} more
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Action Links */}
+                    <div className="flex gap-3 pt-4 border-t border-slate-200">
+                      <button
+                        onClick={() => handleViewCertificate(cert.pdfUrl)}
+                        className="flex-1 flex items-center justify-center gap-2 py-2 text-indigo-600 font-semibold hover:bg-indigo-50 rounded-lg transition-colors"
+                      >
+                        <Eye className="w-4 h-4" />
+                        View
+                      </button>
+                      <button
+                        onClick={() =>
+                          handleDownloadCertificate(cert.title, cert.pdfUrl)
+                        }
+                        className="flex-1 flex items-center justify-center gap-2 py-2 text-indigo-600 font-semibold hover:bg-indigo-50 rounded-lg transition-colors"
+                      >
+                        <Download className="w-4 h-4" />
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-20">
+            <Award className="w-16 h-16 text-slate-300 mx-auto mb-4" />
+            <p className="text-2xl font-bold text-slate-600 mb-2">
+              No certificates found
+            </p>
+            <p className="text-slate-500">
+              Try adjusting your search or filter criteria
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* Summary Section */}
+      {filteredCertificates.length > 0 && (
+        <div className="bg-white border-t border-slate-200">
+          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <p className="text-4xl font-bold text-indigo-600 mb-2">
+                  {certificates.length}
+                </p>
+                <p className="text-slate-600 font-semibold">
+                  Total Certificates
+                </p>
+              </div>
+              <div className="text-center">
+                <p className="text-4xl font-bold text-indigo-600 mb-2">
+                  {new Set(certificates.map((c) => c.issuer)).size}
+                </p>
+                <p className="text-slate-600 font-semibold">
+                  Issuing Organizations
+                </p>
+              </div>
+              <div className="text-center">
+                <p className="text-4xl font-bold text-indigo-600 mb-2">
+                  {new Set(certificates.map((c) => c.category)).size}
+                </p>
+                <p className="text-slate-600 font-semibold">Categories</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default CertificatesPage;
