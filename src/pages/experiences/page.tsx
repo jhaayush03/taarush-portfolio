@@ -34,59 +34,38 @@ const ExperiencesPage = () => {
 
   const experiences = [
     {
-      title: "Senior Product Designer",
-      company: "TechVision Co.",
-      period: "2022 - Present",
-      location: "San Francisco, CA",
-      description:
-        "Led design strategy for mobile and web products, resulting in 40% increase in user engagement. Managed a team of 5 designers and established design system.",
-      skills: ["UI/UX Design", "Design Systems", "Figma", "User Research"],
+      title: "Wharton Global Youth Program",
+      company: "Product Design Academy",
+      period: "2025",
+      location: "University of Pennsylvania",
+      description: "",
+      skills: [],
       achievements: [
-        "Redesigned core product interface",
-        "Implemented design tokens",
-        "Mentored junior designers",
+        "Collaborated with Professor Taylor Caputo and international peers under the Wharton faculty, learning design thinking, prototyping and TAM/SAM/SOM analysis.",
+        "Learned to apply structured market-sizing frameworks to test creative engineering ideas against commercial viability. Prototypes developed during the program reflected this rigorous approach, and faculty feedback validated the professional grounding in product innovation.",
       ],
     },
     {
-      title: "Product Designer",
-      company: "Digital Innovation Labs",
-      period: "2020 - 2022",
-      location: "New York, NY",
-      description:
-        "Designed and prototyped user interfaces for 3 major products. Conducted user research and usability testing to validate design decisions.",
-      skills: ["Prototyping", "User Testing", "Sketch", "Adobe XD"],
+      title: "Launch X",
+      company: "Online Bootcamp",
+      period: "2025",
+      location: "",
+      description: "",
+      skills: [],
       achievements: [
-        "Won design innovation award",
-        "Improved conversion rate by 35%",
-        "Built component library",
+        "Selected for LaunchX; collaborated with peers to ideate, prototype, and pitch ventures, gaining hands-on experience in market validation, business modelling, and product design.",
       ],
     },
     {
-      title: "Junior UX Designer",
-      company: "Creative Studios",
-      period: "2019 - 2020",
-      location: "Austin, TX",
-      description:
-        "Assisted in creating wireframes and mockups for client projects. Collaborated with developers to implement design specifications.",
-      skills: ["Wireframing", "Mockups", "HTML/CSS", "Figma"],
+      title: "Summer Internship",
+      company: "Vardan Envirolabs",
+      period: "2024 - Feb 2025",
+      location: "Delhi",
+      description: "",
+      skills: [],
       achievements: [
-        "Completed 15+ client projects",
-        "Learned design fundamentals",
-        "Built portfolio",
-      ],
-    },
-    {
-      title: "Freelance Designer",
-      company: "Self-employed",
-      period: "2018 - 2019",
-      location: "Remote",
-      description:
-        "Provided design services for startups and small businesses. Worked on branding, web design, and marketing materials.",
-      skills: ["Branding", "Web Design", "Logo Design", "Illustrator"],
-      achievements: [
-        "Completed 25+ projects",
-        "5-star client ratings",
-        "Built strong client base",
+        "Identified available and capable employees as part of the talent search module team, designed to assist talent recruitment in companies.",
+        "Conducted market research for the firm, tapping into new domains such as the legal sector, to streamline services and the employment data collection process.",
       ],
     },
   ];

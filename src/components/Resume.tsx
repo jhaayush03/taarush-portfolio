@@ -32,9 +32,7 @@ const Resume = () => {
       <div className="max-w-4xl mx-auto">
         <div
           className={`text-center transition-all duration-1000 ${
-            isVisible
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-10"
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-accent to-purple-600 mb-8 shadow-lg">
@@ -67,15 +65,13 @@ const Resume = () => {
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-border">
-            {[
-              { label: "Years Experience", value: "5+" },
-              { label: "Projects Completed", value: "50+" },
-              { label: "Certifications", value: "12+" },
-            ].map((stat, index) => (
+            {[].map((stat, index) => (
               <div
                 key={stat.label}
                 className={`transition-all duration-1000 ${
-                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                  isVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-10"
                 }`}
                 style={{ transitionDelay: `${(index + 1) * 150}ms` }}
               >

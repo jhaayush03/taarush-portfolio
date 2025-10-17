@@ -38,160 +38,237 @@ const ResumePage = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 8860470606",
+      href: "tel:+918860470606",
     },
     {
       icon: Mail,
       label: "Email",
-      value: "omisaa.bansal@email.com",
-      href: "mailto:omisaa.bansal@email.com",
+      value: "lamba.amritraj@gmail.com",
+      href: "mailto:lamba.amritraj@email.com",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "/in/omisaabansal",
+      value: "/in/Amritraj_Lamba",
       href: "https://linkedin.com/in/omisaabansal",
     },
   ];
 
   const education = [
     {
-      degree: "Bachelor of Technology",
-      field: "Computer Science & Engineering",
-      institution: "Indian Institute of Technology",
-      year: "2021 - 2025",
-      gpa: "7.8/10",
+      degree: "SAT | AP | IELTS",
+      field: "",
+      institution: "",
+      year: "2025",
+      details: ["SAT : 1540", "AP : Calculus BC : 5/5", "IELTS - Band 8"],
+    },
+    {
+      degree: "Grade 10",
+      field: "10/10 A*",
+      institution: "IGCSE",
+      year: "2023-24",
+
       details: [
-        "Relevant Coursework: Data Structures, Algorithms, Web Development",
-        "Active member of Design and Development Club",
-        "Participated in multiple hackathons and coding competitions",
+        "School Topper in Additional Mathematics",
+        "School Topper in Chemistry",
       ],
     },
     {
-      degree: "Higher Secondary Education",
-      field: "Science Stream",
-      institution: "Delhi Public School",
-      year: "2019 - 2021",
-      gpa: "94%",
-      details: [
-        "Scored 98/100 in Mathematics and Physics",
-        "Participated in National Science Olympiad",
-        "School topper in Computer Science",
-      ],
+      degree: "High Schooling",
+      field: "Gurugram",
+      institution: " Heritage International Xperiental Learning",
+      year: "",
+
+      details: [""],
     },
   ];
 
   const experience = [
     {
-      title: "Senior Product Designer",
-      company: "TechVision Co.",
-      period: "2022 - Present",
-      type: "Full-time",
+      title: "Founder",
+      company: "Sewage Suraksha",
+      period: "2024 - Present",
+      type: "",
       details: [
-        "Led design strategy for 5+ mobile and web products",
-        "Increased user engagement by 40% through improved UI/UX",
-        "Managed team of 5 designers and established design system",
-        "Conducted 20+ user research sessions and usability tests",
+        "Developed a sewage lid with multi‑gas sensors; it is a low‑cost retrofit ensuring safety of municipal workers.",
+        "The lid detects harmful gases, including H2S, CH4, NH3, & CO, and alerts authorities to hazardous gas levels. It has been tested on 17 sewers and has been cleared by the National Disaster Management Authority for adoption. ",
       ],
     },
     {
-      title: "Product Designer",
-      company: "Digital Innovation Labs",
-      period: "2020 - 2022",
-      type: "Full-time",
+      title: "Founder",
+      company: "Flood Shield ",
+      period: "2024 - Present",
+      type: "",
       details: [
-        "Designed and prototyped user interfaces for 3 major products",
-        "Improved conversion rate by 35% through A/B testing",
-        "Won design innovation award for mobile app redesign",
-        "Built comprehensive component library with 200+ components",
+        "Flood detection IOT for real-time cloud mapping and emergency coordination; Special Praise for practicality at the Princetonian. Adopted by the National Disaster Management Authority. ",
+        "Designed and piloted an affordable early warning system for floods that alerts authorities to areas where flooding occurs; adopted by 1000+ houses. Commended by the Haryana Government. ",
+        "Also received the Crest Gold Award for this invention",
       ],
     },
     {
-      title: "UI/UX Design Intern",
-      company: "Creative Studios",
-      period: "2019 - 2020",
-      type: "Internship",
+      title: "Founder and Leader",
+      company: "Ingenix School STEM Society",
+      period: "October 2024 - October 2025",
+      type: "",
       details: [
-        "Assisted in creating wireframes and mockups for client projects",
-        "Collaborated with developers to implement design specifications",
-        "Completed 15+ client projects within timeline and budget",
-        "Received 5-star feedback from all clients",
+        "Revived and expanded society from 20 to 50+ members. Mentored 2 teams for the Cambridge Science Competition & F1 in Schools, both qualified internationals.",
+      ],
+    },
+    {
+      title: "Leader",
+      company: "FUNCTION - After School Robotics Club",
+      period: "October 2024 - October 2025",
+      type: "",
+      details: [
+        "Founded a 20+ member club teaching CAD, programming, and mechanical design outside of competition teams",
+        "Introduced collaborative engineering workshops (bridge/tower builds, quizzes) to strengthen teamwork and experimentation",
+        "Built a hands-on learning culture that became an entry pathway for beginners; several members progressed to competitive robotics",
       ],
     },
   ];
 
   const projects = [
     {
-      title: "E-Commerce Platform Redesign",
-      description: "Complete redesign of shopping experience",
-      technologies: ["Figma", "React", "Node.js"],
+      title: "AMC 12B",
+      description: "Scored 132/150",
+      technologies: ["Top 2.5%"],
       details: [
-        "Redesigned entire platform resulting in 50% increase in sales",
-        "Implemented new checkout flow reducing cart abandonment by 25%",
-        "Created comprehensive design system and documentation",
+        "School Rank 1, Country Rank 28, Qualified for AIME, Certificate of Distinction, Honour Roll (Top 2.5%)",
       ],
     },
     {
-      title: "Mobile Banking App",
-      description: "Secure and intuitive banking application",
-      technologies: ["Figma", "React Native", "Firebase"],
+      title: "World International Mathematics Olympiad (WIMO) Final ",
+      description: "Kuala Lumpur, Malaysia",
+      technologies: ["2024"],
+      details: ["Bronze Award"],
+    },
+    {
+      title: "CEMC ",
+      description: "University of Waterloo",
+      technologies: ["2023", "2024"],
       details: [
-        "Designed user-friendly interface for 500k+ users",
-        "Implemented 256-bit encryption for data security",
-        "Achieved 4.8/5 rating on app stores",
+        " Pascal Contest (9thGrade, 2023): 2nd Place from India region, World rank 58, Certificate of Distinction,Student Honour Roll",
+        "Fryer Contest (9th Grade,2023): 2nd Place from India region, Certificate of Distinction",
+        "Cayley Contest (10th Grade, 2024): Certificate of Distinction, Student Honour Roll",
+        "Galios contest (10th Grade, 2024): Certificate of Distinction",
+        "Fermat Contest (11th Grade, 2025) : 9th Place from India region, Certificate of Distinction, Student Honour Roll",
+        "Hypatia Contest (11th Grade, 2025): Certificate of Distinction",
+        " Avogadro Chemistry Contest (11th Grade, 2025): Certificate of Distinction",
+        "Sir Issac Newton Physics Contest(11th Grade, 2025): Certificate of Distinction",
       ],
     },
     {
-      title: "Analytics Dashboard",
-      description: "Real-time data visualization platform",
-      technologies: ["React", "D3.js", "MongoDB"],
+      title: "First Tech Challenge",
+      description: "FTC",
+      technologies: ["2024"],
       details: [
-        "Built interactive dashboard with 15+ visualization types",
-        "Reduced data processing time by 60%",
-        "Enabled real-time analytics for 100+ enterprise clients",
+        "Role: CAD and Design Head of Team",
+        "Achievements: Qualified for Asian Pacific Open Championship (APOC), Sydney, Australia. Won Inspire Award (2nd Place) and Think Award (2024)",
       ],
+    },
+    {
+      title: "SIMOC",
+      description: "Singapore International Mathematics Olympiad Challenge",
+      technologies: ["2024"],
+      details: ["Gold Award (Grade 10)"],
+    },
+    {
+      title: "IOQM",
+      description: "Indian Olympiad Qualifer in Mathematics",
+      technologies: ["2024", "2025"],
+      details: ["Certificate of Merit"],
+    },
+    {
+      title: "SASMO",
+      description: "Singapore and Asian School Mathematics Olympiad",
+      technologies: ["2024"],
+      details: ["Gold Award"],
+    },
+    {
+      title: "AMO",
+      description: "American Mathematics Olympiad",
+      technologies: ["2023", "2022"],
+      details: ["Gold Award (Grade 10, 2023)", "Gold Award (Grade 9, 2022)"],
+    },
+    {
+      title: "TIMO",
+      description: "Thailand International Mathematical Olympiad",
+      technologies: ["2022-23"],
+      details: ["Final Round", "Gold Award (Secondary 3 Group)"],
+    },
+    {
+      title: "HKIMO",
+      description: "Hong Kong International Mathematical Olympiad",
+      technologies: ["2024"],
+      details: ["Heat Round", "Gold Award (Secondary Secondary Group)"],
+    },
+    {
+      title: "Standford Math Tournament",
+      description: "SMT",
+      technologies: ["2023"],
+      details: ["Honourable Mention in General Test"],
+    },
+    {
+      title: "Australian Mathematics Competition",
+      description: "Senior Division, Grade 11",
+      technologies: ["2024"],
+      details: ["Certificate of Distinction"],
+    },
+    {
+      title: "Euler‘s Circle",
+      description: "",
+      technologies: ["June-July 2024"],
+      details: [
+        "One of 30 members worldwide. Capstone on linear algebra and projective geometry; improved modeling intuition later applied to CFD and robot mechanisms. Attended on 50% scholarship",
+      ],
+    },
+    {
+      title: "F1 in Schools",
+      description: "Design Engineer",
+      technologies: ["2024"],
+      details: ["Ranked 15th in Nationals", "Regional Digital Marketing Award"],
+    },
+    {
+      title: "Future Intelligence Science Olympiad Physics",
+      description: "International round",
+      technologies: ["2024"],
+      details: ["Gold Medal"],
+    },
+    {
+      title: "International Maths Kangaroo Competition",
+      description: "",
+      technologies: ["2023"],
+      details: ["Sikver Medal"],
+    },
+    {
+      title: "International Junior Honor Society",
+      description: "IJHS, Singapore",
+      technologies: ["2023 - 24"],
+      details: ["Certificate of Membership"],
     },
   ];
 
   const skills = [
     {
-      category: "Design Tools",
-      items: ["Figma", "Adobe XD", "Sketch", "Illustrator", "Photoshop"],
+      category: "Technical Skills",
+      items: ["Python", "3D Modelling : CAD", "Arduino Robotics"],
     },
     {
-      category: "Development",
-      items: ["React", "JavaScript", "HTML/CSS", "Node.js", "MongoDB"],
+      category: "Sports",
+      items: ["Karate Shotokan : Black Belt"],
     },
     {
-      category: "Soft Skills",
-      items: [
-        "Leadership",
-        "Communication",
-        "Problem Solving",
-        "Time Management",
-      ],
-    },
-  ];
-
-  const certificates = [
-    {
-      title: "Google UX Design Certificate",
-      issuer: "Google",
-      date: "2023",
-      url: "/certificates/google-ux",
+      category: "Music",
+      items: ["Guitar", "Trinity Rock & Pop Grade 5"],
     },
     {
-      title: "Advanced React Development",
-      issuer: "Udemy",
-      date: "2023",
-      url: "/certificates/react",
+      category: "Languages",
+      items: ["English", "French", "Hindi", "Punjabi"],
     },
     {
-      title: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "2022",
-      url: "/certificates/aws",
+      category: "Member",
+      items: ["New York Academy of Sciences- The Junior Academy member"],
     },
   ];
 
@@ -309,7 +386,7 @@ const ResumePage = () => {
                 <SectionBox
                   key={idx}
                   title={edu.degree}
-                  subtitle={`${edu.institution} (${edu.year}) • GPA: ${edu.gpa}`}
+                  subtitle={`${edu.institution} (${edu.year}) `}
                   details={edu.details}
                   icon={BookOpen}
                 />
@@ -357,7 +434,7 @@ const ResumePage = () => {
           >
             <Code className="w-6 h-6 text-indigo-600" />
             <h2 className="text-3xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
-              Projects
+              Academic Honors & Awards
             </h2>
             <ChevronDown
               className={`w-6 h-6 text-slate-400 transition-transform duration-300 ${

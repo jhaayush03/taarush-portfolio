@@ -3,36 +3,32 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    title: "Senior Software Engineer",
-    company: "Tech Innovation Labs",
-    period: "2023 - Present",
-    description: "Leading development of AI-powered applications and XR experiences",
+    title: "Summer Interr",
+    company: "Vardan Envirolabs, Delhi",
+    period: "2024- Feb 2025",
+    description: "",
     highlights: [
-      "Built scalable ML pipelines processing millions of data points",
-      "Designed immersive XR interfaces for enterprise clients",
-      "Mentored team of 5 junior engineers",
+      " Identified available and capable employees as part of the talent search module team, designed to assist talent recruitment in companies.",
+      "Conducted market research for the firm, tapping into new domains such as the legal sector, to streamline services and the employment data collection process.",
     ],
   },
   {
-    title: "Product Designer",
-    company: "Creative Studio",
-    period: "2021 - 2023",
-    description: "Crafted user-centered designs for web and mobile applications",
+    title: "Wharton Global Youth Program",
+    company: "Product Design Academy",
+    period: "2025",
+    description: "University of Pennsylvania",
     highlights: [
-      "Led design system development for 10+ products",
-      "Increased user engagement by 150% through UX improvements",
-      "Collaborated with cross-functional teams",
+      "Collaborated with Professor Taylor Caputo and international peers under the Whar on faculty, learning design thinking, prototyping and TAM/SAM/SOM analysis.",
+      "Learned to apply structured market-sizing frameworks to test creative engineering ideas against commercial viability. Prototypes developed during the program reflected this rigorous approach, and faculty feedback validated the professional grounding in product innovation. ",
     ],
   },
   {
-    title: "Research Intern",
-    company: "Stanford AI Lab",
-    period: "2020 - 2021",
-    description: "Researched machine learning applications in computer vision",
+    title: "Online Bootcamp",
+    company: "LaunchX",
+    period: "June 2025",
+    description: "",
     highlights: [
-      "Published 2 papers in top-tier conferences",
-      "Developed novel algorithms for image recognition",
-      "Presented findings at international symposiums",
+      "Selected for LaunchX; collaborated with peers to ideate, prototype, and pitch ventures, gaining hands-on experience in market validation, business modelling, and product design.",
     ],
   },
 ];
@@ -67,9 +63,7 @@ const Experience = () => {
       <div className="max-w-6xl mx-auto">
         <div
           className={`transition-all duration-1000 mb-16 ${
-            isVisible
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-10"
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
           <h2 className="text-display mb-4">Experience</h2>
@@ -83,7 +77,9 @@ const Experience = () => {
             <div
               key={exp.company}
               className={`relative pl-8 border-l-2 border-accent/20 transition-all duration-1000 hover:border-accent ${
-                isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
+                isVisible
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-10"
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
