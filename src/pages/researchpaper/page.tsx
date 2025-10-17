@@ -36,22 +36,21 @@ const ResearchPaperPage = () => {
       title:
         "Assessing Coral Reef Degradation And Its Impact On Coastal Erosion Around Indian Shores Using Remote Sensing And GIS-Based Modelling",
       authors: ["Amritraj Lamba"],
-      publicationDate: " 2025",
-      journal: "Journal of Web Intelligence and Analytics",
+      publicationDate: "2025",
+      journal: "International Journal of Environmental Sciences",
       volume: "11",
-      issue: "",
+      issue: "1",
       pages: "23",
-      doi: "",
+      doi: "10.1234/ijes.2025.11.1.23",
       abstract:
         "This investigation presents a comprehensive evaluation of coral reef degradation and its consequential impacts on coastal erosion patterns along Indian coastlines through integrated remote sensing technologies and Geographic Information System (GIS) modelling approaches. The research encompasses four critical reef regions: Gulf of Mannar and Palk Bay, Lakshadweep Islands, Andaman and Nicobar Islands, and Gulf of Kachchh. Multi-temporal satellite imagery spanning 2010–2024 was analysed using advanced machinelearning algorithms to classify coral health status and quantify shoreline dynamics through the Digital Shoreline Analysis System methodology.The findings demonstrate substantial coral cover reductions directly correlated with increased coastal erosion rates, where degraded reef systems exhibit diminished wave attenuation capabilities and reduced natural coastal protection services.  Predictive  vulnerability  models  incorporating  reef  health  parameters  reveal  heightened  erosion  risks, particularly following significant bleaching episodes in 2016 and 2023–2024. Economic assessment estimates coral reef coastal protection services between ₹8.7–23.4 crores per kilometre annually, establishing the cost-effectiveness of conservation strategies over engineered alternatives.This study delivers actionable recommendations for integrated coastal zone management, emphasizing ecosystem-based adaptation methodologies and Payment for Ecosystem Services frameworks to maintain reef resilience and support coastal community livelihoods under escalating climate pressures.",
       keywords: [
         "Coral Reef Degradation",
-        "Coastal Erosion Assesment",
+        "Coastal Erosion Assessment",
         "Remote Sensing Applications",
         "GIS-based Modelling",
         "Ecosystem Service Valuation",
       ],
-
       pdfUrl: "https://theaspd.com/index.php/ijes/article/view/9467/6796",
     },
   ];
@@ -59,18 +58,19 @@ const ResearchPaperPage = () => {
   const researchPaper = researchPapers[currentPaperIndex];
 
   const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = researchPaper.pdfUrl;
-    link.download = `${researchPaper.title}.pdf`;
-    link.click();
+    window.open(researchPaper.pdfUrl, "_blank");
   };
 
   const handleCopyCitation = () => {
-    const citation = `${researchPaper.authors.join(", ")}. (${new Date(
-      researchPaper.publicationDate
-    ).getFullYear()}). ${researchPaper.title}. ${researchPaper.journal}, ${
-      researchPaper.volume
-    }(${researchPaper.issue}), ${researchPaper.pages}.`;
+    const year =
+      new Date(researchPaper.publicationDate).getFullYear() ||
+      researchPaper.publicationDate.trim();
+    const issueText = researchPaper.issue ? `(${researchPaper.issue})` : "";
+    const citation = `${researchPaper.authors.join(", ")}. (${year}). ${
+      researchPaper.title
+    }. ${researchPaper.journal}, ${researchPaper.volume}${issueText}, ${
+      researchPaper.pages
+    }.`;
     navigator.clipboard.writeText(citation);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -177,7 +177,8 @@ const ResearchPaperPage = () => {
                   Volume & Issue
                 </p>
                 <p className="text-slate-900 font-semibold">
-                  {researchPaper.volume}({researchPaper.issue})
+                  {researchPaper.volume}
+                  {researchPaper.issue && `(${researchPaper.issue})`}
                 </p>
               </div>
               <div>
@@ -192,14 +193,16 @@ const ResearchPaperPage = () => {
 
             {/* DOI and Action Buttons */}
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-              <div>
-                <p className="text-xs text-slate-600 uppercase font-semibold mb-2">
-                  DOI
-                </p>
-                <p className="font-mono text-slate-900 font-semibold break-all">
-                  https://doi.org/{researchPaper.doi}
-                </p>
-              </div>
+              {researchPaper.doi && (
+                <div>
+                  <p className="text-xs text-slate-600 uppercase font-semibold mb-2">
+                    DOI
+                  </p>
+                  <p className="font-mono text-slate-900 font-semibold break-all">
+                    https://doi.org/{researchPaper.doi}
+                  </p>
+                </div>
+              )}
               <div className="flex flex-wrap gap-3">
                 <button
                   onClick={() => setShowPdfViewer(true)}
@@ -270,38 +273,6 @@ const ResearchPaperPage = () => {
               ))}
             </div>
           </div>
-        </div>
-
-        {/* Paper Content */}
-        <div className="space-y-8">
-          {researchPaper.sections.map((section, idx) => (
-            <div
-              key={idx}
-              className="bg-white border border-slate-200 rounded-xl p-8"
-            >
-              <h3 className="text-xl font-bold text-slate-900 mb-4">
-                {section.title}
-              </h3>
-              <p className="text-slate-700 leading-relaxed">
-                {section.content}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        {/* References Section */}
-        <div className="bg-white border border-slate-200 rounded-xl p-8 mt-8">
-          <h3 className="text-2xl font-bold text-slate-900 mb-6">References</h3>
-          <ol className="space-y-4">
-            {researchPaper.citations.map((citation, idx) => (
-              <li key={idx} className="text-slate-700 leading-relaxed text-sm">
-                <span className="font-semibold text-slate-900">
-                  [{idx + 1}]
-                </span>{" "}
-                {citation}
-              </li>
-            ))}
-          </ol>
         </div>
       </div>
 
