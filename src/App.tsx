@@ -19,7 +19,7 @@ const App = () => (
     <Header />
     <TooltipProvider>
       <Toaster />
-      
+
       <Sonner />
       <BrowserRouter>
         <Routes>

@@ -34,7 +34,7 @@ const About = () => {
           }`}
         >
           <h2 className="text-display mb-12">
-            Hi, I'm <span className="gradient-text">Amritraj!</span>
+            Hi, I'm <span className="gradient-text">Amritraj Lamba!</span>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12">

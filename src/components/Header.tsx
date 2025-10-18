@@ -4,19 +4,7 @@ import { useEffect, useState } from "react";
 import { Plus } from "lucide-react";
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 100;
-      setScrolled(isScrolled);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const navItems = [
     { label: "Experience", href: "/experiences" },
     { label: "Certificates", href: "/certificates" },
@@ -36,34 +24,20 @@ const Header = () => {
 
   return (
     <>
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
-            ? "bg-background/5 backdrop-blur-sm border-b border-border/50 shadow-lg"
-            : "bg-transparent backdrop-blur-sm"
-        }`}
-      >
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-md">
         <div className="px-6 md:px-12 lg:px-24 h-20 flex items-center justify-between">
-          {/* Logo - slides to top left when scrolled */}
+          {/* Logo */}
           <a
             href="/"
-            className={`font-black text-2xl tracking-tighter transition-all duration-700 hover:opacity-80 cursor-pointer ${
-              scrolled
-                ? "opacity-100 translate-y-0 translate-x-0"
-                : "opacity-0 -translate-y-4 -translate-x-4"
-            }`}
+            className="font-black text-2xl tracking-tighter transition-all duration-700 hover:opacity-80 cursor-pointer"
           >
             Amritraj
           </a>
 
-          {/* Menu Button - appears when scrolled */}
+          {/* Menu Button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className={`w-12 h-12 rounded-full border-2 border-foreground/20 hover:border-accent hover:bg-accent/10 flex items-center justify-center transition-all duration-500 hover:scale-110 ${
-              scrolled
-                ? "opacity-100 translate-y-0 rotate-0"
-                : "opacity-0 translate-y-4"
-            }`}
+            className="w-12 h-12 rounded-full border-2 border-foreground/20 hover:border-accent hover:bg-accent/10 flex items-center justify-center transition-all duration-500 hover:scale-110"
             aria-label="Toggle menu"
           >
             <Plus
@@ -74,6 +48,9 @@ const Header = () => {
           </button>
         </div>
       </header>
+
+      {/* Add padding to body to account for fixed header */}
+      <div className="pt-20">{/* Your page content goes here */}</div>
 
       {/* Sliding Navigation Menu */}
       <div
