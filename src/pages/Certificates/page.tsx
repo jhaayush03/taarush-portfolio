@@ -23,134 +23,6 @@ const CertificatesPage = () => {
   const certificates = [
     {
       id: 1,
-<<<<<<< HEAD
-      title: "Google UX Design Certificate",
-      issuer: "Google",
-      date: "June 2023",
-      category: "design",
-      image:
-        "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=600&fit=crop",
-      description:
-        "Completed comprehensive UX design course covering research, wireframing, and prototyping",
-      skills: ["User Research", "Wireframing", "Prototyping", "Figma"],
-      pdfUrl: "/certificates/google-ux.pdf",
-    },
-    {
-      id: 2,
-      title: "Advanced React Development",
-      issuer: "Udemy",
-      date: "August 2023",
-      category: "development",
-      image:
-        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=600&fit=crop",
-      description:
-        "Master React with hooks, context API, and modern best practices",
-      skills: ["React", "JavaScript", "Redux", "Testing"],
-      pdfUrl: "/certificates/react.pdf",
-    },
-    {
-      id: 3,
-      title: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "May 2023",
-      category: "cloud",
-      image:
-        "https://images.unsplash.com/photo-1516321318423-f06f70504504?w=600&h=600&fit=crop",
-      description:
-        "Demonstrated fundamental knowledge of AWS cloud services and architecture",
-      skills: ["AWS", "Cloud Computing", "Infrastructure", "Security"],
-      pdfUrl: "/certificates/aws.pdf",
-    },
-    {
-      id: 4,
-      title: "JavaScript Algorithms & Data Structures",
-      issuer: "FreeCodeCamp",
-      date: "April 2023",
-      category: "development",
-      image:
-        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=600&fit=crop",
-      description:
-        "Comprehensive course on algorithms, data structures, and problem-solving",
-      skills: [
-        "JavaScript",
-        "Algorithms",
-        "Data Structures",
-        "Problem Solving",
-      ],
-      pdfUrl: "/certificates/algorithms.pdf",
-    },
-    {
-      id: 5,
-      title: "UI/UX Design Specialization",
-      issuer: "Coursera",
-      date: "March 2023",
-      category: "design",
-      image:
-        "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=600&fit=crop",
-      description:
-        "Complete specialization covering UX fundamentals, visual design, and interaction design",
-      skills: ["UI Design", "UX Principles", "Design Tools", "User Testing"],
-      pdfUrl: "/certificates/coursera-ux.pdf",
-    },
-    {
-      id: 6,
-      title: "Full Stack Web Development",
-      issuer: "Codecademy",
-      date: "February 2023",
-      category: "development",
-      image:
-        "https://images.unsplash.com/photo-1517849845537-1d51a20414de?w=600&h=600&fit=crop",
-      description:
-        "End-to-end web development with frontend and backend technologies",
-      skills: ["HTML/CSS", "JavaScript", "Node.js", "MongoDB"],
-      pdfUrl: "/certificates/fullstack.pdf",
-    },
-    {
-      id: 7,
-      title: "Figma Master Course",
-      issuer: "DesignCode",
-      date: "January 2023",
-      category: "design",
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=600&fit=crop",
-      description: "Advanced Figma techniques for professional UI/UX designers",
-      skills: ["Figma", "Design Systems", "Prototyping", "Collaboration"],
-      pdfUrl: "/certificates/figma.pdf",
-    },
-    {
-      id: 8,
-      title: "Digital Marketing Fundamentals",
-      issuer: "Google Digital Garage",
-      date: "December 2022",
-      category: "marketing",
-      image:
-        "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=600&fit=crop",
-      description:
-        "Complete guide to digital marketing, SEO, and content strategy",
-      skills: ["Digital Marketing", "SEO", "Analytics", "Content Strategy"],
-      pdfUrl: "/certificates/marketing.pdf",
-    },
-    {
-      id: 9,
-      title: "Mobile App Development with Flutter",
-      issuer: "Udemy",
-      date: "November 2022",
-      category: "development",
-      image:
-        "https://images.unsplash.com/photo-1611532736579-6b16e2b50449?w=600&h=600&fit=crop",
-      description: "Build cross-platform mobile apps using Flutter and Dart",
-      skills: ["Flutter", "Dart", "Mobile Development", "Firebase"],
-      pdfUrl: "/certificates/flutter.pdf",
-    },
-  ];
-
-  const categories = [
-    { name: "all", label: "All Certificates", icon: Award },
-    { name: "design", label: "Design", icon: Award },
-    { name: "development", label: "Development", icon: Award },
-    { name: "cloud", label: "Cloud", icon: Award },
-    { name: "marketing", label: "Marketing", icon: Award },
-=======
       title: "World International Mathematical Olympiad Final",
       issuer: "",
       date: "",
@@ -436,7 +308,6 @@ const CertificatesPage = () => {
       skills: [""],
       pdfUrl: "/c26.jpg",
     },
->>>>>>> master
   ];
 
   const filteredCertificates = certificates.filter((cert) => {
@@ -498,27 +369,6 @@ const CertificatesPage = () => {
               className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:border-indigo-400 focus:bg-white transition-all duration-300"
             />
           </div>
-<<<<<<< HEAD
-
-          {/* Category Filter */}
-          <div className="flex flex-wrap gap-3">
-            {categories.map((category) => (
-              <button
-                key={category.name}
-                onClick={() => setSelectedCategory(category.name)}
-                className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 ${
-                  selectedCategory === category.name
-                    ? "bg-indigo-600 text-white border border-indigo-600 shadow-md"
-                    : "bg-slate-100 text-slate-700 border border-slate-300 hover:border-indigo-400 hover:bg-slate-50"
-                }`}
-              >
-                <Award className="w-4 h-4" />
-                {category.label}
-              </button>
-            ))}
-          </div>
-=======
->>>>>>> master
         </div>
       </div>
 
