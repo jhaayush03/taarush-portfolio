@@ -1,4 +1,4 @@
-"useclient";
+"use client";
 import { useEffect, useState } from "react";
 import { ChevronDown, Linkedin, Instagram, Twitter } from "lucide-react";
 
@@ -10,7 +10,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen relative flex items-center bg-gradient-to-b from-background to-secondary/20 pt-20">
+    <section className="min-h-screen relative flex items-center bg-gradient-to-b from-background to-secondary/20">
       <div className="w-full px-6 md:px-12 lg:px-24 grid lg:grid-cols-2 gap-12 items-center">
         {/* Left side - Text */}
         <div
@@ -19,8 +19,8 @@ const Hero = () => {
           }`}
         >
           <div className="space-y-2">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground">
-              Amritraj Lamba
+            <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold text-foreground">
+              Amritraj<br></br>Lamba
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground font-medium">
               Heritage International Xperiental Learning, Gurugram.
@@ -58,11 +58,11 @@ const Hero = () => {
 
         {/* Right side - Image */}
         <div
-          className={`relative flex justify-center lg:justify-end pt-8 transition-all duration-1000 delay-300 ${
+          className={`relative flex justify-center lg:justify-end transition-all duration-1000 delay-300 -mt-32 ${
             isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
           }`}
         >
-          <div className="relative w-4/5 max-w-md aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative w-3/4 max-w-sm aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
             <img
               src="/profile.jpg"
               alt="Portrait"

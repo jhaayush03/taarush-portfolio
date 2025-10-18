@@ -109,7 +109,7 @@ const Footer = () => {
                 href="mailto:hello@example.com"
                 className="inline-block px-6 py-3 bg-gradient-to-r from-accent via-purple-600 to-pink-600 text-white rounded-lg font-medium hover:shadow-2xl hover:shadow-accent/50 hover:scale-105 transition-all duration-300 animate-fade-in-up"
               >
-                Say Hello 👋
+                Say Hello!
               </a>
             </div>
           </div>
@@ -153,7 +153,7 @@ const Footer = () => {
           {/* Bottom bar */}
           <div className="pt-8 border-t border-gradient-to-r from-transparent via-border to-transparent flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
             <p className="flex items-center gap-2 animate-fade-in-up">
-              © {currentYear} Amritraj Lamba. Made with{" "}
+              © {currentYear} Amritraj Lamba.
               <Heart className="w-4 h-4 text-red-500 fill-red-500 animate-pulse" />{" "}
             </p>
             <div className="flex gap-6">
