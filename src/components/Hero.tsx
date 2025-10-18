@@ -10,7 +10,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen relative flex items-center bg-gradient-to-b from-background to-secondary/20">
+    <section className="min-h-screen relative flex items-start pt-32 bg-gradient-to-b from-background to-secondary/20">
       <div className="w-full px-6 md:px-12 lg:px-24 grid lg:grid-cols-2 gap-12 items-center">
         {/* Left side - Text */}
         <div
