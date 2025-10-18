@@ -23,7 +23,7 @@ const CertificatesPage = () => {
   const certificates = [
     {
       id: 1,
-      title: "Google UX Design Certificate",
+      title: "World International Mathematical Olympiad Final",
       issuer: "",
       date: "",
       category: "",
@@ -34,7 +34,7 @@ const CertificatesPage = () => {
     },
     {
       id: 2,
-      title: "Google UX Design Certificate",
+      title: "Certificate of Appreciation : Pascal",
       issuer: "",
       date: "",
       category: "",
@@ -45,7 +45,7 @@ const CertificatesPage = () => {
     },
     {
       id: 3,
-      title: "Google UX Design Certificate",
+      title: "Fryer Contest : Certificate of Distinction",
       issuer: "",
       date: "",
       category: "",
@@ -56,7 +56,7 @@ const CertificatesPage = () => {
     },
     {
       id: 4,
-      title: "Google UX Design Certificate",
+      title: "Certificate of Appreciation : Fryer",
       issuer: "",
       date: "",
       category: "",
@@ -67,7 +67,7 @@ const CertificatesPage = () => {
     },
     {
       id: 5,
-      title: "Google UX Design Certificate",
+      title: "Cayley Contest : Certificate of Distinction",
       issuer: "",
       date: "",
       category: "",
@@ -78,7 +78,7 @@ const CertificatesPage = () => {
     },
     {
       id: 6,
-      title: "Google UX Design Certificate",
+      title: "Galois Contest : Certificate of Distinction ",
       issuer: "",
       date: "",
       category: "",
@@ -89,7 +89,7 @@ const CertificatesPage = () => {
     },
     {
       id: 7,
-      title: "Google UX Design Certificate",
+      title: "Fermat Contest : Certificate of Distinction",
       issuer: "",
       date: "",
       category: "",
@@ -100,7 +100,7 @@ const CertificatesPage = () => {
     },
     {
       id: 8,
-      title: "Google UX Design Certificate",
+      title: "Hypatia Contest : Certificate of Distinction",
       issuer: "",
       date: "",
       category: "",
@@ -111,7 +111,7 @@ const CertificatesPage = () => {
     },
     {
       id: 9,
-      title: "Google UX Design Certificate",
+      title: "Certificate of Achievement : Stanford Math Tournament",
       issuer: "",
       date: "",
       category: "",
@@ -122,7 +122,8 @@ const CertificatesPage = () => {
     },
     {
       id: 10,
-      title: "Google UX Design Certificate",
+      title:
+        "Certificate of Merit : Indian Olympiad Qualifier in Mathematics IOQM 2024",
       issuer: "",
       date: "",
       category: "",
@@ -133,7 +134,7 @@ const CertificatesPage = () => {
     },
     {
       id: 11,
-      title: "Google UX Design Certificate",
+      title: "SIMOC Silver Award : Math Olympiad Contest",
       issuer: "",
       date: "",
       category: "",
@@ -144,7 +145,7 @@ const CertificatesPage = () => {
     },
     {
       id: 12,
-      title: "Google UX Design Certificate",
+      title: "SIMOC Silver Award : Heritage International Xperiential School",
       issuer: "",
       date: "",
       category: "",
@@ -155,7 +156,7 @@ const CertificatesPage = () => {
     },
     {
       id: 13,
-      title: "Google UX Design Certificate",
+      title: "SIMOC Bronze Award : Heritage Xperiential School",
       issuer: "",
       date: "",
       category: "",
@@ -166,7 +167,7 @@ const CertificatesPage = () => {
     },
     {
       id: 14,
-      title: "Google UX Design Certificate",
+      title: "SASMO Gold Award : Singapore & Asia Schools Math Olympiad",
       issuer: "",
       date: "",
       category: "",
@@ -177,7 +178,7 @@ const CertificatesPage = () => {
     },
     {
       id: 15,
-      title: "Google UX Design Certificate",
+      title: "SASMO Gold Award : American Mathematics Olympiad",
       issuer: "",
       date: "",
       category: "",
@@ -188,7 +189,7 @@ const CertificatesPage = () => {
     },
     {
       id: 16,
-      title: "Google UX Design Certificate",
+      title: "American Mathematics Olympiad 2023",
       issuer: "",
       date: "",
       category: "",
@@ -199,7 +200,7 @@ const CertificatesPage = () => {
     },
     {
       id: 17,
-      title: "Google UX Design Certificate",
+      title: "Thailand International Mathematical Olympiad : Gold",
       issuer: "",
       date: "",
       category: "",
@@ -210,7 +211,7 @@ const CertificatesPage = () => {
     },
     {
       id: 18,
-      title: "Google UX Design Certificate",
+      title: "Hong Kong International Mathematical Olympiad 2022",
       issuer: "",
       date: "",
       category: "",
@@ -221,7 +222,7 @@ const CertificatesPage = () => {
     },
     {
       id: 19,
-      title: "Google UX Design Certificate",
+      title: "Hong Kong International Mathematical Olympiad 2024",
       issuer: "",
       date: "",
       category: "",
@@ -232,7 +233,7 @@ const CertificatesPage = () => {
     },
     {
       id: 20,
-      title: "Google UX Design Certificate",
+      title: "Certificate of Distinction",
       issuer: "",
       date: "",
       category: "",
@@ -243,7 +244,7 @@ const CertificatesPage = () => {
     },
     {
       id: 21,
-      title: "Google UX Design Certificate",
+      title: "STEMplify : Certificate of Participation",
       issuer: "",
       date: "",
       category: "",
@@ -254,7 +255,7 @@ const CertificatesPage = () => {
     },
     {
       id: 22,
-      title: "Google UX Design Certificate",
+      title: "Global Youth Program : Wharton - University of Pennsylvania",
       issuer: "",
       date: "",
       category: "",
@@ -265,7 +266,7 @@ const CertificatesPage = () => {
     },
     {
       id: 23,
-      title: "Google UX Design Certificate",
+      title: "Karate India Organization",
       issuer: "",
       date: "",
       category: "",
@@ -276,7 +277,7 @@ const CertificatesPage = () => {
     },
     {
       id: 24,
-      title: "Google UX Design Certificate",
+      title: "Indo Shotokan Karate-Do Federation",
       issuer: "",
       date: "",
       category: "",
@@ -287,7 +288,7 @@ const CertificatesPage = () => {
     },
     {
       id: 25,
-      title: "Google UX Design Certificate",
+      title: "Asia Pacific Open Championship : Inspire Award",
       issuer: "",
       date: "",
       category: "",
@@ -298,7 +299,7 @@ const CertificatesPage = () => {
     },
     {
       id: 26,
-      title: "Google UX Design Certificate",
+      title: "Asia Pacific Open Championship : Think Award",
       issuer: "",
       date: "",
       category: "",
@@ -307,14 +308,6 @@ const CertificatesPage = () => {
       skills: [""],
       pdfUrl: "/c26.jpg",
     },
-  ];
-
-  const categories = [
-    { name: "all", label: "All Certificates", icon: Award },
-    { name: "design", label: "Design", icon: Award },
-    { name: "development", label: "Development", icon: Award },
-    { name: "cloud", label: "Cloud", icon: Award },
-    { name: "marketing", label: "Marketing", icon: Award },
   ];
 
   const filteredCertificates = certificates.filter((cert) => {
@@ -375,24 +368,6 @@ const CertificatesPage = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:border-indigo-400 focus:bg-white transition-all duration-300"
             />
-          </div>
-
-          {/* Category Filter */}
-          <div className="flex flex-wrap gap-3">
-            {categories.map((category) => (
-              <button
-                key={category.name}
-                onClick={() => setSelectedCategory(category.name)}
-                className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 ${
-                  selectedCategory === category.name
-                    ? "bg-indigo-600 text-white border border-indigo-600 shadow-md"
-                    : "bg-slate-100 text-slate-700 border border-slate-300 hover:border-indigo-400 hover:bg-slate-50"
-                }`}
-              >
-                <Award className="w-4 h-4" />
-                {category.label}
-              </button>
-            ))}
           </div>
         </div>
       </div>
