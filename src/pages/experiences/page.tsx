@@ -219,17 +219,7 @@ const ExperiencesPage = () => {
           </div>
 
           {/* Bottom Section */}
-          <div className="mt-20 p-8 rounded-2xl backdrop-blur-md bg-white/70 border border-white/50 shadow-lg text-center">
-            <h3 className="text-2xl font-bold text-slate-900 mb-3">
-              Ready to collaborate?
-            </h3>
-            <p className="text-slate-600 mb-6">
-              Let's create something amazing together
-            </p>
-            <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-full hover:shadow-lg hover:shadow-indigo-300 transform hover:scale-105 transition-all duration-300">
-              Get In Touch
-            </button>
-          </div>
+          <div className="mt-20 p-8 rounded-2xl backdrop-blur-md bg-white/70 border border-white/50 shadow-lg text-center"></div>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { ChevronDown, Linkedin, Instagram, Twitter } from "lucide-react";
+import { ChevronDown, Mail, Github } from "lucide-react";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,34 +22,28 @@ const Hero = () => {
             <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold text-foreground">
               Amritraj<br></br>Lamba
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground font-medium"></p>
+            <p className="text-lg md:text-xl text-muted-foreground font-medium">
+              Heritage International Xperiental Learning, Gurugram.
+            </p>
           </div>
 
           {/* Social Links */}
           <div className="flex gap-4 pt-4">
             <a
-              href="https://linkedin.com"
+              href="mailto:lamba.amritraj@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full border-2 border-foreground/20 hover:border-accent hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-all duration-300 hover:scale-110"
             >
-              <Linkedin className="w-5 h-5" />
+              <Mail className="w-5 h-5" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full border-2 border-foreground/20 hover:border-accent hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-all duration-300 hover:scale-110"
             >
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full border-2 border-foreground/20 hover:border-accent hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-all duration-300 hover:scale-110"
-            >
-              <Twitter className="w-5 h-5" />
+              <Github className="w-5 h-5" />
             </a>
           </div>
         </div>

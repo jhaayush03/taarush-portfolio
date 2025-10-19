@@ -1,11 +1,20 @@
 import { useEffect, useRef, useState } from "react";
-import { Award, ExternalLink } from "lucide-react";
+import { Newspaper, ExternalLink } from "lucide-react";
 
-const certificates = [];
+const newsArticles = [
+  {
+    title:
+      "OMOTEC Teams Triumph at First Tech Challenge Asia Pacific Open Championship apoc in Australia",
+    date: "",
+    description: "",
+    link: "https://firstindia.co.in/articles/omotec-teams-triumph-at-first-tech-challenge-asia-pacific-open-championship-apoc-in-Australia",
+    color: "from-blue-500 to-indigo-600",
+  },
+];
 
-const Certificates = () => {
+const InTheNews = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -26,58 +35,85 @@ const Certificates = () => {
 
   return (
     <section
-      id="certificates"
+      id="news"
       ref={sectionRef}
-      className="section-padding bg-gradient-to-b from-background to-secondary/30"
+      className="py-20 px-6 bg-gradient-to-b from-slate-50 to-white"
     >
       <div className="max-w-6xl mx-auto">
+        {/* Header */}
         <div
-          className={`transition-all duration-1000 mb-16 ${
+          className={`text-center mb-16 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
-        ></div>
+        >
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <Newspaper className="w-8 h-8 text-indigo-600" />
+            <h2 className="text-5xl font-black bg-gradient-to-r from-slate-900 via-indigo-800 to-slate-900 bg-clip-text text-transparent">
+              In The News
+            </h2>
+          </div>
+          <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+            Featured stories and press coverage highlighting innovation and
+            impact
+          </p>
+        </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {certificates.map((cert, index) => (
+        {/* News Cards */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {newsArticles.map((article, index) => (
             <div
-              key={cert.title}
-              className={`group relative overflow-hidden rounded-2xl bg-card border border-border hover:border-accent/50 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 ${
+              key={article.title}
+              className={`group relative overflow-hidden rounded-2xl bg-white border border-slate-200 hover:border-indigo-300 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"
               }`}
-              style={{ transitionDelay: `${index * 100}ms` }}
+              style={{ transitionDelay: `${index * 150}ms` }}
             >
-              {/* Gradient overlay */}
+              {/* Gradient overlay on hover */}
               <div
-                className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
+                className={`absolute inset-0 bg-gradient-to-br ${article.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}
               />
 
               <div className="relative p-8">
-                <div className="flex items-start justify-between mb-4">
+                {/* Icon and Date */}
+                <div className="flex items-start justify-between mb-6">
                   <div
-                    className={`w-12 h-12 rounded-xl bg-gradient-to-br ${cert.color} flex items-center justify-center shadow-lg`}
+                    className={`w-14 h-14 rounded-xl bg-gradient-to-br ${article.color} flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300`}
                   >
-                    <Award className="w-6 h-6 text-white" />
+                    <Newspaper className="w-7 h-7 text-white" />
                   </div>
-                  <span className="text-sm font-medium text-muted-foreground bg-secondary px-3 py-1 rounded-full">
-                    {cert.year}
+                  <span className="text-sm font-semibold text-slate-500 bg-slate-100 px-4 py-2 rounded-full">
+                    {article.date}
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors">
-                  {cert.title}
+                {/* Title */}
+                <h3 className="text-2xl font-bold mb-4 text-slate-900 group-hover:text-indigo-600 transition-colors leading-tight">
+                  {article.title}
                 </h3>
-                <p className="text-accent font-medium mb-3">{cert.issuer}</p>
-                <p className="text-sm text-foreground/70 mb-4">
-                  {cert.description}
+
+                {/* Description */}
+                <p className="text-slate-600 mb-6 leading-relaxed">
+                  {article.description}
                 </p>
 
-                <button className="flex items-center gap-2 text-sm font-medium text-accent hover:gap-3 transition-all">
-                  View Certificate
-                  <ExternalLink className="w-4 h-4" />
-                </button>
+                {/* Button */}
+                <a
+                  href={article.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-indigo-300 transform hover:scale-105 transition-all duration-300"
+                >
+                  Read Article
+                  <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
               </div>
+
+              {/* Bottom accent line */}
+              <div
+                className={`h-1 bg-gradient-to-r ${article.color} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left`}
+              />
             </div>
           ))}
         </div>
@@ -86,4 +122,4 @@ const Certificates = () => {
   );
 };
 
-export default Certificates;
+export default InTheNews;
