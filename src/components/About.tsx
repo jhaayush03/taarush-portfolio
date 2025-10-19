@@ -33,16 +33,16 @@ const About = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-display mb-12">
+          <h2 className="text-display mb-12 text-center">
             Hi, I'm <span className="gradient-text">Amritraj Lamba!</span>
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="space-y-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="space-y-6 text-center">
               <p className="text-lg leading-relaxed text-foreground/90">
                 I love building ideas that connect science, creativity, and
                 real-world impact. From designing tech to make city systems
-                safer to creating flood detection tools, I’m always curious
+                safer to creating flood detection tools, I'm always curious
                 about how innovation can solve everyday problems.
               </p>
               <p className="text-lg leading-relaxed text-foreground/90">
@@ -51,30 +51,6 @@ const About = () => {
                 and people. For me, learning is about experimenting, improving,
                 and finding ways to make a difference through invention.
               </p>
-            </div>
-
-            <div className="grid grid-cols-2 gap-6">
-              {[
-                { label: "", value: "Python" },
-                { label: "", value: "3D Design - CAD" },
-                { label: "", value: "Arduino" },
-                { label: "", value: "Robotics" },
-              ].map((skill, index) => (
-                <div
-                  key={skill.label}
-                  className={`p-6 rounded-2xl bg-card border border-border shadow-sm hover:shadow-md transition-all duration-500 hover:-translate-y-1 ${
-                    isVisible ? "animate-fade-in-up" : "opacity-0"
-                  }`}
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  <div className="text-sm font-medium text-muted-foreground mb-2">
-                    {skill.label}
-                  </div>
-                  <div className="text-xl font-bold text-accent">
-                    {skill.value}
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </div>

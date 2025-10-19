@@ -5,6 +5,7 @@ import {
   Mail,
   Heart,
   ArrowUp,
+  Github,
 } from "lucide-react";
 
 const Footer = () => {
@@ -13,25 +14,20 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Linkedin,
-      href: "https://linkedin.com",
+      href: "https://linkedin.com/in/Amritraj_Lamba",
       label: "LinkedIn",
       color: "from-blue-600 to-blue-400",
     },
+
     {
-      icon: Instagram,
-      href: "https://instagram.com",
-      label: "Instagram",
-      color: "from-pink-600 via-purple-600 to-orange-500",
-    },
-    {
-      icon: Twitter,
-      href: "https://twitter.com",
-      label: "Twitter",
-      color: "from-cyan-500 to-blue-500",
+      icon: Github,
+      href: "https://github.com/AmritrajL",
+      label: "GitHub",
+      color: "from-gray-700 to-gray-900",
     },
     {
       icon: Mail,
-      href: "mailto:hello@example.com",
+      href: "mailto:lamba.amritraj@gmail.com",
       label: "Email",
       color: "from-green-500 to-emerald-400",
     },
@@ -106,7 +102,7 @@ const Footer = () => {
                 hello
               </p>
               <a
-                href="mailto:hello@example.com"
+                href="mailto:lamba.amritraj@gmail.com"
                 className="inline-block px-6 py-3 bg-gradient-to-r from-accent via-purple-600 to-pink-600 text-white rounded-lg font-medium hover:shadow-2xl hover:shadow-accent/50 hover:scale-105 transition-all duration-300 animate-fade-in-up"
               >
                 Say Hello!

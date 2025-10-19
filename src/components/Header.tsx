@@ -9,7 +9,7 @@ const Header = () => {
     { label: "Experience", href: "/experiences" },
     { label: "Certificates", href: "/certificates" },
     { label: "Resume", href: "/resumes" },
-    { label: "Research Paper", href: "/researchpaper" },
+    { label: "Research Papers", href: "/researchpaper" },
   ];
 
   const handleNavigation = (href) => {

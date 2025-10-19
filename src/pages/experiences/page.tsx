@@ -36,7 +36,7 @@ const ExperiencesPage = () => {
     {
       title: "Wharton Global Youth Program",
       company: "Product Design Academy",
-      period: "2025",
+      period: "June 2025",
       location: "University of Pennsylvania",
       description: "",
       skills: [],
@@ -48,7 +48,7 @@ const ExperiencesPage = () => {
     {
       title: "Launch X",
       company: "Online Bootcamp",
-      period: "2025",
+      period: "June 2025",
       location: "",
       description: "",
       skills: [],
@@ -59,7 +59,7 @@ const ExperiencesPage = () => {
     {
       title: "Summer Internship",
       company: "Vardan Envirolabs",
-      period: "2024 - Feb 2025",
+      period: "December 2024 - February 2025",
       location: "Delhi",
       description: "",
       skills: [],

@@ -60,13 +60,17 @@ const ResumePage = () => {
       field: "",
       institution: "",
       year: "2025",
-      details: ["SAT : 1540", "AP : Calculus BC : 5/5", "IELTS - Band 8"],
+      details: [
+        "SAT : 1550 (Maths : 800 , Readinh & Writing 750)",
+        "AP : Calculus BC : 5/5",
+        "IELTS - Band 8",
+      ],
     },
     {
       degree: "Grade 10",
       field: "10/10 A*",
       institution: "IGCSE",
-      year: "2023-24",
+      year: "Jul 2023 - june 24",
       details: [
         "School Topper in Additional Mathematics",
         "School Topper in Chemistry",
@@ -76,7 +80,7 @@ const ResumePage = () => {
       degree: "High Schooling",
       field: "Gurugram",
       institution: " Heritage International Xperiental Learning",
-      year: "",
+      year: "Aug 2024 - May 2026",
       details: [],
     },
   ];
@@ -85,7 +89,7 @@ const ResumePage = () => {
     {
       title: "Founder",
       company: "Sewage Suraksha",
-      period: "2024 - Present",
+      period: "April 2024 - Present",
       type: "",
       details: [
         "Developed a sewage lid with multi‑gas sensors; it is a low‑cost retrofit ensuring safety of municipal workers.",
@@ -95,7 +99,7 @@ const ResumePage = () => {
     {
       title: "Founder",
       company: "Flood Shield ",
-      period: "2024 - Present",
+      period: "July 2024 - Present",
       type: "",
       details: [
         "Flood detection IOT for real-time cloud mapping and emergency coordination; Special Praise for practicality at the Princetonian. Adopted by the National Disaster Management Authority. ",

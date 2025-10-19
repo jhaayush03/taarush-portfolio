@@ -22,9 +22,7 @@ const Hero = () => {
             <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold text-foreground">
               Amritraj<br></br>Lamba
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground font-medium">
-              Heritage International Xperiental Learning, Gurugram.
-            </p>
+            <p className="text-lg md:text-xl text-muted-foreground font-medium"></p>
           </div>
 
           {/* Social Links */}
