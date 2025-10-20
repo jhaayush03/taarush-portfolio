@@ -30,12 +30,12 @@ const ResumePage = () => {
   };
 
   const handleViewResume = () => {
-    window.open("/resume.pdf", "_blank");
+    window.open("/resume-amrit.pdf", "_blank");
   };
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
+    link.href = "/resume-amrit.pdf";
     link.download = "Resume_Amritraj_Lamba.pdf";
     link.click();
   };
