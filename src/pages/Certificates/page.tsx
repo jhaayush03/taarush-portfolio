@@ -16,7 +16,7 @@ const CertificatesPage = () => {
   const handleDownloadAllCertificates = () => {
     const link = document.createElement("a");
     link.href = "/certificates-all.pdf";
-    link.download = "All_Certificates_Omisaa_Bansal.pdf";
+    link.download = "All_Certificates_Amritraj_Lamba.pdf";
     link.click();
   };
 
