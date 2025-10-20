@@ -6,7 +6,7 @@ const Resume = () => {
   const sectionRef = useRef(null);
 
   // Replace this with your actual PDF path
-  const resumePdfPath = "/resume.pdf";
+  const resumePdfPath = "/resume-amrit.pdf";
 
   useEffect(() => {
     const observer = new IntersectionObserver(

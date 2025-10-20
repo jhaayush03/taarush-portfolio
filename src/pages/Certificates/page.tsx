@@ -15,7 +15,7 @@ const CertificatesPage = () => {
 
   const handleDownloadAllCertificates = () => {
     const link = document.createElement("a");
-    link.href = "/certificates-all.pdf";
+    link.href = "/certificate_amritraj_lamba.pdf";
     link.download = "All_Certificates_Amritraj_Lamba.pdf";
     link.click();
   };
@@ -584,38 +584,6 @@ const CertificatesPage = () => {
           </div>
         )}
       </div>
-
-      {/* Summary Section */}
-      {filteredCertificates.length > 0 && (
-        <div className="bg-white border-t border-slate-200">
-          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <p className="text-4xl font-bold text-indigo-600 mb-2">
-                  {certificates.length}
-                </p>
-                <p className="text-slate-600 font-semibold">
-                  Total Certificates
-                </p>
-              </div>
-              <div className="text-center">
-                <p className="text-4xl font-bold text-indigo-600 mb-2">
-                  {new Set(certificates.map((c) => c.issuer)).size}
-                </p>
-                <p className="text-slate-600 font-semibold">
-                  Issuing Organizations
-                </p>
-              </div>
-              <div className="text-center">
-                <p className="text-4xl font-bold text-indigo-600 mb-2">
-                  {new Set(certificates.map((c) => c.category)).size}
-                </p>
-                <p className="text-slate-600 font-semibold">Categories</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    title: "Summer Interr",
+    title: "Summer Intern",
     company: "Vardan Envirolabs, Delhi",
     period: "2024- Feb 2025",
     description: "",
