@@ -3,11 +3,31 @@ import { Newspaper, ExternalLink } from "lucide-react";
 
 const newsArticles = [
   {
-    title:
-      "OMOTEC Teams Triumph at First Tech Challenge Asia Pacific Open Championship apoc in Australia",
-    date: "",
+    title: "FirstIndia",
+    date: "9th August 2024",
     description: "",
-    link: "https://firstindia.co.in/articles/omotec-teams-triumph-at-first-tech-challenge-asia-pacific-open-championship-apoc-in-Australia",
+    link: "https://firstindia.co.in/articles/omotec-teams-triumph-at-first-tech-challenge-asia-pacific-open-championship-apoc-in-Australiahttps://firstindia.co.in/articles/omotec-teams-triumph-at-first-tech-challenge-asia-pacific-open-championship-apoc-in-Australia",
+    color: "from-blue-500 to-indigo-600",
+  },
+  {
+    title: "ANI PR",
+    date: "8th August 2024",
+    description: "",
+    link: "https://theprint.in/ani-press-releases/omotec-teams-triumph-at-first-tech-challenge-asia-pacific-open-championship-apoc-in-australia/2214775/",
+    color: "from-blue-500 to-indigo-600",
+  },
+  {
+    title: "Asia Education Review",
+    date: "9th August 2024",
+    description: "",
+    link: "https://www.asiaeducationreview.com/technology/news/omotec-teams-shine-at-first-tech-challenge-asia-pacific-open-championship-nwid-2381.html",
+    color: "from-blue-500 to-indigo-600",
+  },
+  {
+    title: "ABP Live Focus",
+    date: "8th August 2024",
+    description: "",
+    link: "https://news.abplive.com/brand-wire/omotec-teams-triumph-at-first-tech-challenge-asia-pacific-open-championship-apoc-in-australia-1708959",
     color: "from-blue-500 to-indigo-600",
   },
 ];

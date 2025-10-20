@@ -136,7 +136,7 @@ const ResumePage = () => {
         "Analysed five factories from fully manual (e.g., Metaval Engineering) to highly automated (e.g., Kadence Automation) to assess efficiency, training needs, and scalability.",
         "Found robot-assisted systems improved efficiency by up to 20% while reducing fatigue and errors.",
         "Highlighted the need for retraining, ergonomic design, and phased adoption.",
-        "Developed a roadmap for SME modernisation without worker displacement; validated through Delhi-NCR field data, mentorship from Stanford’s Dr. Arvind Karunakaran, and publication in Lex Localis.",
+        "Developed a roadmap for SME modernisation without worker displacement; validated through Delhi-NCR field data, mentorship from Stanford's Dr. Arvind Karunakaran, and publication in Lex Localis.",
       ],
     },
     {
@@ -224,118 +224,141 @@ const ResumePage = () => {
     },
   ];
 
-  const academicHonours = [
-    {
-      title: "USA Math Olympiads 2022-24",
-      description: "AMC 12B 2024",
-      technologies: ["Top 2.5%"],
-      details: [
-        "Scored 132/150, School Rank 1, Country Rank 28, Qualified for AIME, Certificate of Distinction, Honour Roll (Top 2.5%)",
-      ],
-    },
-    {
-      title: "World International Mathematics Olympiad (WIMO) Final",
-      description: "Kuala Lumpur, Malaysia",
-      technologies: ["2024"],
-      details: ["Bronze Award"],
-    },
-    {
-      title: "CEMC",
-      description: "University of Waterloo",
-      technologies: ["2023", "2024"],
-      details: [
-        "Pascal Contest (9th Grade, 2023): 2nd Place from India region, World rank 58, Certificate of Distinction, Student Honour Roll",
-        "Fryer Contest (9th Grade, 2023): 2nd Place from India region, Certificate of Distinction",
-        "Cayley Contest (10th Grade, 2024): Certificate of Distinction, Student Honour Roll",
-        "Galios contest (10th Grade, 2024): Certificate of Distinction",
-        "Fermat Contest (11th Grade, 2025): 9th Place from India region, Certificate of Distinction, Student Honour Roll",
-        "Hypatia Contest (11th Grade, 2025): Certificate of Distinction",
-        "Avogadro Chemistry Contest (11th Grade, 2025): Certificate of Distinction",
-        "Sir Isaac Newton Physics Contest (11th Grade, 2025): Certificate of Distinction",
-      ],
-    },
-    {
-      title: "SIMOC",
-      description: "Singapore International Mathematics Olympiad Challenge",
-      technologies: ["2024"],
-      details: ["Gold Award (Grade 10)"],
-    },
-    {
-      title: "IOQM",
-      description: "Indian Olympiad Qualifier in Mathematics",
-      technologies: ["2024", "2025"],
-      details: ["Certificate of Merit"],
-    },
-    {
-      title: "SASMO",
-      description: "Singapore and Asian School Mathematics Olympiad",
-      technologies: ["2024"],
-      details: ["Gold Award"],
-    },
-    {
-      title: "AMO",
-      description: "American Mathematics Olympiad",
-      technologies: ["2023", "2022"],
-      details: ["Gold Award (Grade 10, 2023)", "Gold Award (Grade 9, 2022)"],
-    },
-    {
-      title: "TIMO",
-      description: "Thailand International Mathematical Olympiad",
-      technologies: ["2022-23"],
-      details: ["Final Round", "Gold Award (Secondary 3 Group)"],
-    },
-    {
-      title: "HKIMO",
-      description: "Hong Kong International Mathematical Olympiad",
-      technologies: ["2024"],
-      details: ["Heat Round", "Gold Award (Secondary Group)"],
-    },
-    {
-      title: "Stanford Math Tournament",
-      description: "SMT",
-      technologies: ["2023"],
-      details: ["Honourable Mention in General Test"],
-    },
-    {
-      title: "Australian Mathematics Competition",
-      description: "Senior Division, Grade 11",
-      technologies: ["2024"],
-      details: ["Certificate of Distinction"],
-    },
-    {
-      title: "International Maths Kangaroo Competition",
-      description: "",
-      technologies: ["2023"],
-      details: ["Silver Medal"],
-    },
-    {
-      title: "International Junior Honor Society",
-      description: "IJHS, Singapore",
-      technologies: ["2023 - 24"],
-      details: ["Certificate of Membership"],
-    },
-    {
-      title: "Future Intelligence Science Olympiad",
-      description: "International round",
-      technologies: ["2024"],
-      details: ["Gold Medal"],
-    },
-    {
-      title: "First Tech Challenge",
-      description: "FTC",
-      technologies: ["2024"],
-      details: [
-        "Role: CAD and Design Head of Team",
-        "Achievements: Qualified for Asian Pacific Open Championship (APOC), Sydney, Australia. Won Inspire Award (2nd Place) and Think Award (2024)",
-      ],
-    },
-    {
-      title: "F1 in Schools",
-      description: "Design Engineer",
-      technologies: ["2024"],
-      details: ["Ranked 15th in Nationals", "Regional Digital Marketing Award"],
-    },
-  ];
+  const academicHonours = {
+    mathematics: [
+      {
+        title: "USA Math Olympiads 2022-24",
+        description: "AMC 12B 2024",
+        technologies: ["Top 2.5%"],
+        details: [
+          "Scored 132/150, School Rank 1, Country Rank 28, Qualified for AIME, Certificate of Distinction, Honour Roll (Top 2.5%)",
+        ],
+      },
+      {
+        title: "World International Mathematics Olympiad (WIMO) Final",
+        description: "Kuala Lumpur, Malaysia",
+        technologies: ["2024"],
+        details: ["Bronze Award"],
+      },
+      {
+        title: "CEMC Math Contests",
+        description: "University of Waterloo",
+        technologies: ["2023", "2024", "2025"],
+        details: [
+          "Pascal Contest (9th Grade, 2023): 2nd Place from India region, World rank 58, Certificate of Distinction, Student Honour Roll",
+          "Fryer Contest (9th Grade, 2023): 2nd Place from India region, Certificate of Distinction",
+          "Cayley Contest (10th Grade, 2024): Certificate of Distinction, Student Honour Roll",
+          "Galios contest (10th Grade, 2024): Certificate of Distinction",
+          "Fermat Contest (11th Grade, 2025): 9th Place from India region, Certificate of Distinction, Student Honour Roll",
+          "Hypatia Contest (11th Grade, 2025): Certificate of Distinction",
+        ],
+      },
+      {
+        title: "SIMOC",
+        description: "Singapore International Mathematics Olympiad Challenge",
+        technologies: ["2024"],
+        details: ["Gold Award (Grade 10)"],
+      },
+      {
+        title: "IOQM",
+        description: "Indian Olympiad Qualifier in Mathematics",
+        technologies: ["2024", "2025"],
+        details: ["Certificate of Merit"],
+      },
+      {
+        title: "SASMO",
+        description: "Singapore and Asian School Mathematics Olympiad",
+        technologies: ["2024"],
+        details: ["Gold Award"],
+      },
+      {
+        title: "AMO",
+        description: "American Mathematics Olympiad",
+        technologies: ["2023", "2022"],
+        details: ["Gold Award (Grade 10, 2023)", "Gold Award (Grade 9, 2022)"],
+      },
+      {
+        title: "TIMO",
+        description: "Thailand International Mathematical Olympiad",
+        technologies: ["2022-23"],
+        details: ["Final Round", "Gold Award (Secondary 3 Group)"],
+      },
+      {
+        title: "HKIMO",
+        description: "Hong Kong International Mathematical Olympiad",
+        technologies: ["2024"],
+        details: ["Heat Round", "Gold Award (Secondary Group)"],
+      },
+      {
+        title: "Stanford Math Tournament",
+        description: "SMT",
+        technologies: ["2023"],
+        details: ["Honourable Mention in General Test"],
+      },
+      {
+        title: "Australian Mathematics Competition",
+        description: "Senior Division, Grade 11",
+        technologies: ["2024"],
+        details: ["Certificate of Distinction"],
+      },
+      {
+        title: "International Maths Kangaroo Competition",
+        description: "",
+        technologies: ["2023"],
+        details: ["Silver Medal"],
+      },
+      {
+        title: "International Junior Honor Society",
+        description: "IJHS, Singapore",
+        technologies: ["2023 - 24"],
+        details: ["Certificate of Membership"],
+      },
+    ],
+    chemistry: [
+      {
+        title: "Avogadro Chemistry Contest",
+        description: "CEMC, University of Waterloo",
+        technologies: ["2025"],
+        details: ["Certificate of Distinction (11th Grade, 2025)"],
+      },
+    ],
+    physics: [
+      {
+        title: "Sir Isaac Newton Physics Contest",
+        description: "CEMC, University of Waterloo",
+        technologies: ["2025"],
+        details: ["Certificate of Distinction (11th Grade, 2025)"],
+      },
+      {
+        title: "Future Intelligence Science Olympiad",
+        description: "International round",
+        technologies: ["2024"],
+        details: ["Gold Medal"],
+      },
+    ],
+
+    general: [
+      {
+        title: "First Tech Challenge",
+        description: "FTC",
+        technologies: ["2024"],
+        details: [
+          "Role: CAD and Design Head of Team",
+          "Achievements: Qualified for Asian Pacific Open Championship (APOC), Sydney, Australia ",
+          "Won: Inspire Award (2nd Place) and Think Award (2024), 4th Ranked in Knockout Races out of 32 teams. ",
+        ],
+      },
+      {
+        title: "F1 in Schools",
+        description: "Design Engineer",
+        technologies: ["2024"],
+        details: [
+          "Ranked 15th in Nationals",
+          "Regional Digital Marketing Award",
+        ],
+      },
+    ],
+  };
 
   const socialImpact = [
     {
@@ -355,7 +378,7 @@ const ResumePage = () => {
       type: "",
       details: [
         "Volunteered as a mentor for the Signal Stars team from a rural-area community in Thane.",
-        "Led rural students through design, construction and competition preparation, culminating in the team earning the Judges’ Choice Award at the FIRST Tech Challenge India Championship 2023‑24",
+        "Led rural students through design, construction and competition preparation, culminating in the team earning the Judges' Choice Award at the FIRST Tech Challenge India Championship 2023‑24",
         "Guided the students to present a strong engineering portfolio, build a modular robot mechanism and collaborate effectively under competition constraints.",
       ],
     },
@@ -387,7 +410,7 @@ const ResumePage = () => {
       period: "",
       type: "",
       details: [
-        "Selected member; engaged for a year with the Academy’s STEM community.",
+        "Selected member; engaged for a year with the Academy's STEM community.",
         "Part of the Solar Power team under Energy Infrastructure.",
       ],
     },
@@ -700,48 +723,210 @@ const ResumePage = () => {
             />
           </div>
           {expandedSections.honours !== false && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {academicHonours.map((project, idx) => (
-                <div
-                  key={idx}
-                  className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center flex-shrink-0">
-                      <Award className="w-5 h-5 text-indigo-600" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-lg font-bold text-slate-900">
-                        {project.title}
-                      </h3>
-                      <p className="text-sm text-slate-600 mt-1">
-                        {project.description}
-                      </p>
-                      <div className="flex flex-wrap gap-2 mt-3 mb-4">
-                        {project.technologies.map((tech, i) => (
-                          <span
-                            key={i}
-                            className="px-2 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded"
-                          >
-                            {tech}
-                          </span>
-                        ))}
+            <div className="space-y-10">
+              {/* Mathematics Subsection */}
+              <div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                  <span className="w-2 h-8 bg-gradient-to-b from-indigo-500 to-blue-500 rounded-full"></span>
+                  Mathematics
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {academicHonours.mathematics.map((project, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
+                    >
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center flex-shrink-0">
+                          <Award className="w-5 h-5 text-indigo-600" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="text-lg font-bold text-slate-900">
+                            {project.title}
+                          </h4>
+                          <p className="text-sm text-slate-600 mt-1">
+                            {project.description}
+                          </p>
+                          <div className="flex flex-wrap gap-2 mt-3 mb-4">
+                            {project.technologies.map((tech, i) => (
+                              <span
+                                key={i}
+                                className="px-2 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded"
+                              >
+                                {tech}
+                              </span>
+                            ))}
+                          </div>
+                          <ul className="space-y-2">
+                            {project.details.map((detail, i) => (
+                              <li
+                                key={i}
+                                className="text-sm text-slate-600 flex items-start gap-2"
+                              >
+                                <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5 flex-shrink-0" />
+                                {detail}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
-                      <ul className="space-y-2">
-                        {project.details.map((detail, i) => (
-                          <li
-                            key={i}
-                            className="text-sm text-slate-600 flex items-start gap-2"
-                          >
-                            <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5 flex-shrink-0" />
-                            {detail}
-                          </li>
-                        ))}
-                      </ul>
                     </div>
-                  </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+
+              {/* Physics Subsection */}
+              <div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                  <span className="w-2 h-8 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
+                  Physics
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {academicHonours.physics.map((project, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
+                    >
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center flex-shrink-0">
+                          <Award className="w-5 h-5 text-purple-600" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="text-lg font-bold text-slate-900">
+                            {project.title}
+                          </h4>
+                          <p className="text-sm text-slate-600 mt-1">
+                            {project.description}
+                          </p>
+                          <div className="flex flex-wrap gap-2 mt-3 mb-4">
+                            {project.technologies.map((tech, i) => (
+                              <span
+                                key={i}
+                                className="px-2 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded"
+                              >
+                                {tech}
+                              </span>
+                            ))}
+                          </div>
+                          <ul className="space-y-2">
+                            {project.details.map((detail, i) => (
+                              <li
+                                key={i}
+                                className="text-sm text-slate-600 flex items-start gap-2"
+                              >
+                                <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-1.5 flex-shrink-0" />
+                                {detail}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Chemistry Subsection */}
+              <div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                  <span className="w-2 h-8 bg-gradient-to-b from-green-500 to-emerald-500 rounded-full"></span>
+                  Chemistry
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {academicHonours.chemistry.map((project, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
+                    >
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-100 to-emerald-100 flex items-center justify-center flex-shrink-0">
+                          <Award className="w-5 h-5 text-green-600" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="text-lg font-bold text-slate-900">
+                            {project.title}
+                          </h4>
+                          <p className="text-sm text-slate-600 mt-1">
+                            {project.description}
+                          </p>
+                          <div className="flex flex-wrap gap-2 mt-3 mb-4">
+                            {project.technologies.map((tech, i) => (
+                              <span
+                                key={i}
+                                className="px-2 py-1 bg-green-50 text-green-700 text-xs font-semibold rounded"
+                              >
+                                {tech}
+                              </span>
+                            ))}
+                          </div>
+                          <ul className="space-y-2">
+                            {project.details.map((detail, i) => (
+                              <li
+                                key={i}
+                                className="text-sm text-slate-600 flex items-start gap-2"
+                              >
+                                <span className="w-1.5 h-1.5 rounded-full bg-green-500 mt-1.5 flex-shrink-0" />
+                                {detail}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* General Subsection */}
+              <div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                  <span className="w-2 h-8 bg-gradient-to-b from-amber-500 to-orange-500 rounded-full"></span>
+                  Robotics
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {academicHonours.general.map((project, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
+                    >
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center flex-shrink-0">
+                          <Award className="w-5 h-5 text-amber-600" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="text-lg font-bold text-slate-900">
+                            {project.title}
+                          </h4>
+                          <p className="text-sm text-slate-600 mt-1">
+                            {project.description}
+                          </p>
+                          <div className="flex flex-wrap gap-2 mt-3 mb-4">
+                            {project.technologies.map((tech, i) => (
+                              <span
+                                key={i}
+                                className="px-2 py-1 bg-amber-50 text-amber-700 text-xs font-semibold rounded"
+                              >
+                                {tech}
+                              </span>
+                            ))}
+                          </div>
+                          <ul className="space-y-2">
+                            {project.details.map((detail, i) => (
+                              <li
+                                key={i}
+                                className="text-sm text-slate-600 flex items-start gap-2"
+                              >
+                                <span className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-1.5 flex-shrink-0" />
+                                {detail}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           )}
         </div>

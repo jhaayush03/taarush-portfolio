@@ -28,8 +28,7 @@ const ResearchPaperPage = () => {
       abstract:
         "Human-Robot  Collaboration  (HRC)  is  reshaping various  industries  by  merging  human  adapt-ability, decision making skills, and dexterity with the accuracy, efficiency and cost effectiveness of robotic systems.This research explores how the integration of HRC influences efficiency of operations in factories, workforce dynamics, and technology adoption in manufacturing envi-ronments.Focusing on a range of factories from fully manual to those with lots of automation, this study analyses the opportunities and challenges presented by  collaborative  robotics  in  real  world  industrial  settings.The  research  methodology  was  primarily qualitative, supported by some quantitative data, and involved conducting structured interviews and surveys with  per-sonnel  and  high  level  staff  across  four  factories  in  the  Delhi-NCR  region.The  data  collection focused  on  aspects  such as labor  challenges,  order tracking, automation  barriers, sustainability  efforts, and future technology plans. By comparing experiences from different automation con-texts, the study identifies patterns  and  contrasts  in  how  factories  manage  the  balance  between  manual  processes  and  collaborative technologies.The  results  show  that  the  automation  levels  show  a  spectrum  of  contrasting  differences.In factories  solely  functioning  manually,  there  are  difficultieswithordertrackinginefficiencies,highlaborcosts,andlowsustainability.Theseoper-ations are overreliant on outdated and inefficient systems and it is difficult to scale production. Semi-automated facilities are in between, combining high-end tools and CNC machines with labour and manual variations.There have been some gains in accuracy and reduced manual effort,buttherearestillbarriers.Despitethedifferencesbetweenfactoriesandtheirindustries,  there  were some major emerging cross-cut cutting themes: the need for automation strategies, human-centricdesignandcustomyetscalableinfrastructure.Researchershaveemphasizedthat successful Human-Robot Collaboration (HRC)  does  not  only  depend  on  technologically  imple-mentingautomation.SuccessfulHRCdependsonretraining, ergonomicsandcostmanagement. In summary, human-robot collaboration has the potential to be transformative in regions like DelhiNCR,butitssuccessisreliantontechnology,laborpractice,andlong-termadaptability",
       keywords: ["Human-robot", "Automation", "Artificial Intelligence"],
-      pdfUrl:
-        "https://lex-localis.org/index.php/LexLocalis/article/view/801630/2078",
+      pdfUrl: "/robot_researchpaper.pdf",
     },
     {
       id: 2,
@@ -51,7 +50,7 @@ const ResearchPaperPage = () => {
         "GIS-based Modelling",
         "Ecosystem Service Valuation",
       ],
-      pdfUrl: "https://theaspd.com/index.php/ijes/article/view/9467/6796",
+      pdfUrl: "/researchpaper2.pdf",
     },
   ];
 
