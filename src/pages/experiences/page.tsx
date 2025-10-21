@@ -42,7 +42,8 @@ const ExperiencesPage = () => {
       skills: [],
       achievements: [
         "Collaborated with Professor Taylor Caputo and international peers under the Wharton faculty, learning design thinking, prototyping and TAM/SAM/SOM analysis.",
-        "Learned to apply structured market-sizing frameworks to test creative engineering ideas against commercial viability. Prototypes developed during the program reflected this rigorous approach, and faculty feedback validated the professional grounding in product innovation.",
+        "Learned to apply structured market-sizing frameworks to test creative engineering ideas against commercial viability.",
+        "Prototypes validated the professional grounding in product innovation",
       ],
     },
     {
@@ -53,7 +54,22 @@ const ExperiencesPage = () => {
       description: "",
       skills: [],
       achievements: [
-        "Selected for LaunchX; collaborated with peers to ideate, prototype, and pitch ventures, gaining hands-on experience in market validation, business modelling, and product design.",
+        "Selected for LaunchX; collaborated with peers to ideate, prototype, and pitch ventures. ",
+        "Gained hands-on experience in market validation, business modelling, and product design.",
+      ],
+    },
+    {
+      title: "Euler's Circle",
+      company: "",
+      period: "June - July 2025",
+      location: "",
+      description: "",
+      skills: [],
+      achievements: [
+        "'Serious Mathematics for Serious High School Students' under Standford Prof. Simon Salzedo.",
+        "One of 30 members worldwide.",
+        "Capstone on linear algebra and projective geometry; improved modelling intuition later applied to CFD and robot mechanisms.",
+        "Attended on 50% scholarship.",
       ],
     },
     {
@@ -64,8 +80,10 @@ const ExperiencesPage = () => {
       description: "",
       skills: [],
       achievements: [
-        "Identified available and capable employees as part of the talent search module team, designed to assist talent recruitment in companies.",
-        "Conducted market research for the firm, tapping into new domains such as the legal sector, to streamline services and the employment data collection process.",
+        "Worked in an EIA consultancy, performing labs tests on air and water samples and learning to operate professional instruments like spectrophotometers and gas analyzers.",
+        "Gained practical understanding of how data translates into impact-assessment reports that influence project approvals.",
+        "Used the knowledge from this experience to begin working on the sewage-detection lid project.",
+        "Recieved a certificate and recommendation letter from the lab director, validating both the internship and the project.",
       ],
     },
   ];

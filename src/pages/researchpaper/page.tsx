@@ -21,28 +21,30 @@ const ResearchPaperPage = () => {
       id: 1,
       title: "Automation & Robotics Adoption in Delhi-NCR Factories",
       authors: ["Amritraj Lamba"],
-      publicationDate: "January 2025",
+      publicationDate: "2025-08-12",
       journal: "LEX LOCALIS-JOURNAL OF LOCAL SELF-GOVERNMENT",
       volume: "23",
       pages: "17",
       abstract:
-        "Human-Robot  Collaboration  (HRC)  is  reshaping various  industries  by  merging  human  adapt-ability, decision making skills, and dexterity with the accuracy, efficiency and cost effectiveness of robotic systems.This research explores how the integration of HRC influences efficiency of operations in factories, workforce dynamics, and technology adoption in manufacturing envi-ronments.Focusing on a range of factories from fully manual to those with lots of automation, this study analyses the opportunities and challenges presented by  collaborative  robotics  in  real  world  industrial  settings.The  research  methodology  was  primarily qualitative, supported by some quantitative data, and involved conducting structured interviews and surveys with  per-sonnel  and  high  level  staff  across  four  factories  in  the  Delhi-NCR  region.The  data  collection focused  on  aspects  such as labor  challenges,  order tracking, automation  barriers, sustainability  efforts, and future technology plans. By comparing experiences from different automation con-texts, the study identifies patterns  and  contrasts  in  how  factories  manage  the  balance  between  manual  processes  and  collaborative technologies.The  results  show  that  the  automation  levels  show  a  spectrum  of  contrasting  differences.In factories  solely  functioning  manually,  there  are  difficultieswithordertrackinginefficiencies,highlaborcosts,andlowsustainability.Theseoper-ations are overreliant on outdated and inefficient systems and it is difficult to scale production. Semi-automated facilities are in between, combining high-end tools and CNC machines with labour and manual variations.There have been some gains in accuracy and reduced manual effort,buttherearestillbarriers.Despitethedifferencesbetweenfactoriesandtheirindustries,  there  were some major emerging cross-cut cutting themes: the need for automation strategies, human-centricdesignandcustomyetscalableinfrastructure.Researchershaveemphasizedthat successful Human-Robot Collaboration (HRC)  does  not  only  depend  on  technologically  imple-mentingautomation.SuccessfulHRCdependsonretraining, ergonomicsandcostmanagement. In summary, human-robot collaboration has the potential to be transformative in regions like DelhiNCR,butitssuccessisreliantontechnology,laborpractice,andlong-termadaptability",
+        "Human-Robot Collaboration (HRC) is reshaping various industries by merging human adaptability, decision making skills, and dexterity with the accuracy, efficiency and cost effectiveness of robotic systems. This research explores how the integration of HRC influences efficiency of operations in factories, workforce dynamics, and technology adoption in manufacturing environments. Focusing on a range of factories from fully manual to those with lots of automation, this study analyses the opportunities and challenges presented by collaborative robotics in real world industrial settings. The research methodology was primarily qualitative, supported by some quantitative data, and involved conducting structured interviews and surveys with personnel and high level staff across four factories in the Delhi-NCR region. The data collection focused on aspects such as labour challenges, order tracking, automation barriers, sustainability efforts, and future technology plans. By comparing experiences from different automation contexts, the study identifies patterns and contrasts in how factories manage the balance between manual processes and collaborative technologies. The results show that the automation levels show a spectrum of contrasting differences. In factories solely functioning manually, there are difficulties with order tracking inefficiencies, high labour costs, and low sustainability. These operations are over-reliant on outdated and inefficient systems and it is difficult to scale production. Semi-automated facilities are in between, combining high-end tools and CNC machines with labour and manual variations. There have been some gains in accuracy and reduced manual effort, but there are still barriers. Despite the differences between factories and their industries, there were some major emerging cross-cutting themes: the need for automation strategies, human-centric design and custom yet scalable infrastructure. Researchers have emphasized that successful Human-Robot Collaboration (HRC) does not only depend on technologically implementing automation. Successful HRC depends on retraining, ergonomics and cost-management. In summary, human-robot collaboration has the potential to be transformative in regions like Delhi NCR, but its success is reliant on technology, labour practice, and long-term adaptability.",
       keywords: ["Human-robot", "Automation", "Artificial Intelligence"],
       pdfUrl: "/robot_researchpaper.pdf",
+      publishUrl:
+        "https://lex-localis.org/index.php/LexLocalis/article/view/801630", // <--- Added
     },
     {
       id: 2,
       title:
         "Assessing Coral Reef Degradation And Its Impact On Coastal Erosion Around Indian Shores Using Remote Sensing And GIS-Based Modelling",
       authors: ["Amritraj Lamba"],
-      publicationDate: "2025",
+      publicationDate: "2025-09-10",
       journal: "International Journal of Environmental Sciences",
       volume: "11",
       issue: "1",
       pages: "23",
       doi: "10.1234/ijes.2025.11.1.23",
       abstract:
-        "This investigation presents a comprehensive evaluation of coral reef degradation and its consequential impacts on coastal erosion patterns along Indian coastlines through integrated remote sensing technologies and Geographic Information System (GIS) modelling approaches. The research encompasses four critical reef regions: Gulf of Mannar and Palk Bay, Lakshadweep Islands, Andaman and Nicobar Islands, and Gulf of Kachchh. Multi-temporal satellite imagery spanning 2010–2024 was analysed using advanced machinelearning algorithms to classify coral health status and quantify shoreline dynamics through the Digital Shoreline Analysis System methodology.The findings demonstrate substantial coral cover reductions directly correlated with increased coastal erosion rates, where degraded reef systems exhibit diminished wave attenuation capabilities and reduced natural coastal protection services.  Predictive  vulnerability  models  incorporating  reef  health  parameters  reveal  heightened  erosion  risks, particularly following significant bleaching episodes in 2016 and 2023–2024. Economic assessment estimates coral reef coastal protection services between ₹8.7–23.4 crores per kilometre annually, establishing the cost-effectiveness of conservation strategies over engineered alternatives.This study delivers actionable recommendations for integrated coastal zone management, emphasizing ecosystem-based adaptation methodologies and Payment for Ecosystem Services frameworks to maintain reef resilience and support coastal community livelihoods under escalating climate pressures.",
+        "This investigation presents a comprehensive evaluation of coral reef degradation and its consequential impacts on coastal erosion patterns along Indian coastlines through integrated remote sensing technologies and Geographic Information System (GIS) modelling approaches. The research encompasses four critical reef regions: Gulf of Mannar and Palk Bay, Lakshadweep Islands, Andaman and Nicobar Islands, and Gulf of Kachchh. Multi-temporal satellite imagery spanning 2010–2024 was analysed using advanced machine-learning algorithms to classify coral health status and quantify shoreline dynamics through the Digital Shoreline Analysis System methodology. The findings demonstrate substantial coral cover reductions directly correlated with increased coastal erosion rates, where degraded reef systems exhibit diminished wave attenuation capabilities and reduced natural coastal protection services. Predictive vulnerability models incorporating reef health parameters reveal heightened erosion risks, particularly following significant bleaching episodes in 2016 and 2023–2024. Economic assessment estimates coral reef coastal protection services between ₹8.7–23.4 crores per kilometre annually, establishing the cost-effectiveness of conservation strategies over engineered alternatives. This study delivers actionable recommendations for integrated coastal zone management, emphasizing ecosystem-based adaptation methodologies and Payment for Ecosystem Services frameworks to maintain reef resilience and support coastal community livelihoods under escalating climate pressures.",
       keywords: [
         "Coral Reef Degradation",
         "Coastal Erosion Assessment",
@@ -51,6 +53,7 @@ const ResearchPaperPage = () => {
         "Ecosystem Service Valuation",
       ],
       pdfUrl: "/researchpaper2.pdf",
+      publishUrl: "https://theaspd.com/index.php/ijes/article/view/9467", // <--- Added
     },
   ];
 
@@ -85,6 +88,10 @@ const ResearchPaperPage = () => {
     } else {
       alert("Share this paper: " + text);
     }
+  };
+
+  const handlePublish = () => {
+    window.open(researchPaper.publishUrl, "_blank");
   };
 
   const goToNextPaper = () => {
@@ -216,6 +223,12 @@ const ResearchPaperPage = () => {
                 >
                   <Download className="w-5 h-5" />
                   Download
+                </button>
+                <button
+                  onClick={handlePublish}
+                  className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 hover:shadow-lg transition-all duration-300"
+                >
+                  📤 Publish
                 </button>
               </div>
             </div>

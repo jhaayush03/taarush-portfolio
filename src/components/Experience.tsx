@@ -5,11 +5,13 @@ const experiences = [
   {
     title: "Summer Intern",
     company: "Vardan Envirolabs, Delhi",
-    period: "2024- Feb 2025",
+    period: "Dec 2024- Feb 2025",
     description: "",
     highlights: [
-      " Identified available and capable employees as part of the talent search module team, designed to assist talent recruitment in companies.",
-      "Conducted market research for the firm, tapping into new domains such as the legal sector, to streamline services and the employment data collection process.",
+      "Worked in an EIA consultancy, performing lab tests on air and water samples and learning to operate professional instruments like spectrophotometers and gas analyzers.",
+      "Gained practical understanding of how data translates into impact-assessment reports that influence project approvals.",
+      "Used the knowledge from this experience to begin working on the sewage-detection lid project.",
+      "Recieved a certificate and recommendation letter from the lab director, validating both the internship and the project.",
     ],
   },
   {

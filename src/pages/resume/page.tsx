@@ -20,7 +20,18 @@ import {
 } from "lucide-react";
 
 const ResumePage = () => {
-  const [expandedSections, setExpandedSections] = useState({});
+  const [expandedSections, setExpandedSections] = useState({
+    education: true,
+    leadership: true,
+    research: true,
+    summer: true,
+    internships: true,
+    courses: true,
+    honours: true,
+    social: true,
+    membership: true,
+    skills: true,
+  });
 
   const toggleSection = (section) => {
     setExpandedSections((prev) => ({
@@ -177,7 +188,7 @@ const ResumePage = () => {
     {
       title: "Euler's Circle",
       company: "",
-      period: "June 2025",
+      period: "June - July 2024",
       type: "",
       details: [
         "'Serious Mathematics for Serious High School Students' under Stanford Prof. Simon Salzedo.",
@@ -286,8 +297,11 @@ const ResumePage = () => {
       {
         title: "HKIMO",
         description: "Hong Kong International Mathematical Olympiad",
-        technologies: ["2024"],
-        details: ["Heat Round", "Gold Award (Secondary Group)"],
+        technologies: [""],
+        details: [
+          "Heat Round 2024 : Gold Award ( Senior Secondary Group )",
+          "Final Round 2022 : Gold Award (Secondary 2 Group)",
+        ],
       },
       {
         title: "Stanford Math Tournament",
@@ -348,6 +362,8 @@ const ResumePage = () => {
           "Won: Inspire Award (2nd Place) and Think Award (2024), 4th Ranked in Knockout Races out of 32 teams. ",
         ],
       },
+    ],
+    stem: [
       {
         title: "F1 in Schools",
         description: "Design Engineer",
@@ -391,7 +407,7 @@ const ResumePage = () => {
     },
     {
       category: "Sports",
-      items: ["Karate Shotokan: Black Belt"],
+      items: ["Shotokan Karate : Black Belt and Diploma"],
     },
     {
       category: "Music",
@@ -524,7 +540,7 @@ const ResumePage = () => {
               }`}
             />
           </div>
-          {expandedSections.education !== false && (
+          {expandedSections.education && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {education.map((edu, idx) => (
                 <SectionBox
@@ -557,7 +573,7 @@ const ResumePage = () => {
               }`}
             />
           </div>
-          {expandedSections.leadership !== false && (
+          {expandedSections.leadership && (
             <div className="space-y-6">
               {leadership.map((item, idx) => (
                 <SectionBox
@@ -590,7 +606,7 @@ const ResumePage = () => {
               }`}
             />
           </div>
-          {expandedSections.research !== false && (
+          {expandedSections.research && (
             <div className="space-y-6">
               {researchPapers.map((item, idx) => (
                 <SectionBox
@@ -623,7 +639,7 @@ const ResumePage = () => {
               }`}
             />
           </div>
-          {expandedSections.summer !== false && (
+          {expandedSections.summer && (
             <div className="space-y-6">
               {summerPrograms.map((item, idx) => (
                 <SectionBox
@@ -656,7 +672,7 @@ const ResumePage = () => {
               }`}
             />
           </div>
-          {expandedSections.internships !== false && (
+          {expandedSections.internships && (
             <div className="space-y-6">
               {internships.map((item, idx) => (
                 <SectionBox
@@ -689,7 +705,7 @@ const ResumePage = () => {
               }`}
             />
           </div>
-          {expandedSections.courses !== false && (
+          {expandedSections.courses && (
             <div className="space-y-6">
               {advancedCourses.map((item, idx) => (
                 <SectionBox
@@ -722,7 +738,7 @@ const ResumePage = () => {
               }`}
             />
           </div>
-          {expandedSections.honours !== false && (
+          {expandedSections.honours && (
             <div className="space-y-10">
               {/* Mathematics Subsection */}
               <div>
@@ -877,7 +893,7 @@ const ResumePage = () => {
                 </div>
               </div>
 
-              {/* General Subsection */}
+              {/* Robotics Subsection */}
               <div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
                   <span className="w-2 h-8 bg-gradient-to-b from-amber-500 to-orange-500 rounded-full"></span>
@@ -927,6 +943,57 @@ const ResumePage = () => {
                   ))}
                 </div>
               </div>
+
+              {/* STEM Subsection */}
+              <div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                  <span className="w-2 h-8 bg-gradient-to-b from-rose-500 to-red-500 rounded-full"></span>
+                  STEM
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {academicHonours.stem.map((project, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
+                    >
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-rose-100 to-red-100 flex items-center justify-center flex-shrink-0">
+                          <Award className="w-5 h-5 text-rose-600" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="text-lg font-bold text-slate-900">
+                            {project.title}
+                          </h4>
+                          <p className="text-sm text-slate-600 mt-1">
+                            {project.description}
+                          </p>
+                          <div className="flex flex-wrap gap-2 mt-3 mb-4">
+                            {project.technologies.map((tech, i) => (
+                              <span
+                                key={i}
+                                className="px-2 py-1 bg-rose-50 text-rose-700 text-xs font-semibold rounded"
+                              >
+                                {tech}
+                              </span>
+                            ))}
+                          </div>
+                          <ul className="space-y-2">
+                            {project.details.map((detail, i) => (
+                              <li
+                                key={i}
+                                className="text-sm text-slate-600 flex items-start gap-2"
+                              >
+                                <span className="w-1.5 h-1.5 rounded-full bg-rose-500 mt-1.5 flex-shrink-0" />
+                                {detail}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           )}
         </div>
@@ -947,7 +1014,7 @@ const ResumePage = () => {
               }`}
             />
           </div>
-          {expandedSections.social !== false && (
+          {expandedSections.social && (
             <div className="space-y-6">
               {socialImpact.map((item, idx) => (
                 <SectionBox
@@ -980,7 +1047,7 @@ const ResumePage = () => {
               }`}
             />
           </div>
-          {expandedSections.membership !== false && (
+          {expandedSections.membership && (
             <div className="space-y-6">
               {membership.map((item, idx) => (
                 <SectionBox
@@ -1013,7 +1080,7 @@ const ResumePage = () => {
               }`}
             />
           </div>
-          {expandedSections.skills !== false && (
+          {expandedSections.skills && (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {skills.map((skillGroup, idx) => (
                 <div
