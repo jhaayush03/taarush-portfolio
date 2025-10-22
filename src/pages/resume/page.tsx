@@ -367,7 +367,7 @@ const ResumePage = () => {
       {
         title: "F1 in Schools",
         description: "Design Engineer",
-        technologies: ["2024"],
+        technologies: ["2022-2024"],
         details: [
           "Ranked 15th in Nationals",
           "Regional Digital Marketing Award",

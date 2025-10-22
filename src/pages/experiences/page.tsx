@@ -76,7 +76,7 @@ const ExperiencesPage = () => {
       title: "Summer Internship",
       company: "Vardan Envirolabs",
       period: "December 2024 - February 2025",
-      location: "Delhi",
+      location: "Gurgaon",
       description: "",
       skills: [],
       achievements: [

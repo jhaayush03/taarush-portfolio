@@ -4,7 +4,7 @@ import { Briefcase, Calendar } from "lucide-react";
 const experiences = [
   {
     title: "Summer Intern",
-    company: "Vardan Envirolabs, Delhi",
+    company: "Vardan Envirolabs, Gurgaon",
     period: "Dec 2024- Feb 2025",
     description: "",
     highlights: [
@@ -17,7 +17,7 @@ const experiences = [
   {
     title: "Wharton Global Youth Program",
     company: "Product Design Academy",
-    period: "2025",
+    period: "June 2025",
     description: "University of Pennsylvania",
     highlights: [
       "Collaborated with Professor Taylor Caputo and international peers under the Whar on faculty, learning design thinking, prototyping and TAM/SAM/SOM analysis.",
