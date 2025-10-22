@@ -6,7 +6,7 @@ const newsArticles = [
     title: "FirstIndia",
     date: "9th August 2024",
     description: "",
-    link: "https://firstindia.co.in/articles/omotec-teams-triumph-at-first-tech-challenge-asia-pacific-open-championship-apoc-in-Australiahttps://firstindia.co.in/articles/omotec-teams-triumph-at-first-tech-challenge-asia-pacific-open-championship-apoc-in-Australia",
+    link: "https://firstindia.co.in/articles/omotec-teams-triumph-at-first-tech-challenge-asia-pacific-open-championship-apoc-in-Australia",
     color: "from-blue-500 to-indigo-600",
   },
   {

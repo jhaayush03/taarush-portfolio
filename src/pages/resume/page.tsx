@@ -121,7 +121,7 @@ const ResumePage = () => {
       period: "October 2024 - October 2025",
       type: "",
       details: [
-        "Revived and expanded society from 20 to 50+ members. Mentored 2 teams for the Cambridge Science Competition & F1 in Schools, both qualified internationals.",
+        "Revived and expanded society from 20 to 50+ members. Mentored 2 teams for the Cambridge Science Competition & F1 in Schools, both qualified nationals.",
       ],
     },
     {

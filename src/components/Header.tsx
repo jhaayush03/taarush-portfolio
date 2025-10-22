@@ -31,7 +31,7 @@ const Header = () => {
             href="/"
             className="font-black text-2xl tracking-tighter transition-all duration-700 hover:opacity-80 cursor-pointer"
           >
-            Amritraj
+            Amritraj Lamba
           </a>
 
           {/* Menu Button */}
