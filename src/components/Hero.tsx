@@ -38,7 +38,7 @@ const Hero = () => {
               <Mail className="w-5 h-5" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/AmritrajL"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full border-2 border-foreground/20 hover:border-accent hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-all duration-300 hover:scale-110"
