@@ -56,7 +56,7 @@ const Hero = () => {
         >
           <div className="relative w-3/4 max-w-sm aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
             <img
-              src="/profile.jpg"
+              src="/profile.jpeg"
               alt="Portrait"
               className="w-full h-full object-cover"
             />
