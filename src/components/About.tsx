@@ -43,14 +43,18 @@ const About = () => {
                 I love building ideas that connect science, creativity, and
                 real-world impact. From designing tech to make city systems
                 safer to creating flood detection tools, I'm always curious
-                about how innovation can solve everyday problems.
+                about how innovation and problem-solving can tackle everyday
+                challenges. Whether I'm working through complex math problems in
+                international olympiads or analyzing data patterns in my
+                projects, I enjoy the process of breaking down challenges and
+                finding elegant solutions. I explore physics, coding, and design
+                with the same mindset—every problem is an opportunity to learn
+                and create something meaningful. I hope to study engineering to
+                keep pushing boundaries between rigorous thinking, technology,
+                and people, always experimenting and finding ways to make a
+                difference through invention.
               </p>
-              <p className="text-lg leading-relaxed text-foreground/90">
-                I enjoy exploring physics, coding, and design, and I hope to
-                study engineering to keep pushing boundaries between technology
-                and people. For me, learning is about experimenting, improving,
-                and finding ways to make a difference through invention.
-              </p>
+              <p className="text-lg leading-relaxed text-foreground/90"></p>
             </div>
           </div>
         </div>
