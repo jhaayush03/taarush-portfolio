@@ -204,7 +204,7 @@ const ResumePage = () => {
       title: "Vardan Envirolabs",
       company: "Summer Intern",
       period: "December 2024 - February 2025",
-      type: "",
+      type: "Gurugram",
       details: [
         "Worked in an EIA consultancy, performing lab tests on air and water samples and learning to operate professional instruments like spectrophotometers and gas analyzers.",
         "Gained practical understanding of how data translates into impact-assessment reports that influence project approvals.",
@@ -1006,7 +1006,7 @@ const ResumePage = () => {
           >
             <Heart className="w-6 h-6 text-indigo-600" />
             <h2 className="text-3xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
-              Social Impact Projects
+              Volunteer work
             </h2>
             <ChevronDown
               className={`w-6 h-6 text-slate-400 transition-transform duration-300 ${

@@ -37,7 +37,7 @@ const GallerySection = () => {
     },
     {
       id: 3,
-      title: "Experiences",
+      title: "Experience",
       category: "branding",
       image: "/3.jpeg",
       url: "/experiences",
@@ -103,7 +103,7 @@ const GallerySection = () => {
       id: 8,
       type: "image",
       image: "/p8.jpg",
-      description: "TEENS OF GOD, NGO",
+      description: "TEENS OF GOD, Registered NGO",
     },
     {
       id: 9,
@@ -121,19 +121,20 @@ const GallerySection = () => {
       id: 11,
       type: "video",
       video: "/v1.mp4",
-      description: "",
+      description: "Adjustable solar panel",
     },
     {
       id: 12,
       type: "video",
       video: "/v2.mp4",
-      description: "",
+      description:
+        "Witnessing HRC in person to understand how it helps improve efficiency",
     },
     {
       id: 13,
       type: "video",
       video: "/v3.mp4",
-      description: "",
+      description: "Game prep for First Tech Challenge, APOC",
     },
   ];
 
@@ -208,9 +209,7 @@ const GallerySection = () => {
             }}
             className="mb-8"
           >
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-3 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-600 bg-clip-text text-transparent">
-              Gallery
-            </h1>
+            <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-3 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-600 bg-clip-text text-transparent"></h1>
             <p className="text-lg md:text-xl text-slate-600 font-medium">
               Explore my latest work and creative projects
             </p>
@@ -291,7 +290,7 @@ const GallerySection = () => {
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-4 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-600 bg-clip-text text-transparent">
-            Photo & Video Showcase
+            Gallery
           </h2>
           <p className="text-lg text-slate-600 mb-12 font-medium">
             A curated collection of visual stories and creative moments
