@@ -54,28 +54,28 @@ const GallerySection = () => {
   const showcasePhotos = [
     {
       id: 1,
-      type: "",
+      type: "image",
       image: "/p1.jpg",
       description:
         "INSPIRE AWARD & THINK AWARD, APOC FTC 2024, Sydney Australia",
     },
     {
       id: 2,
-      type: "",
+      type: "image",
       image: "/p2.jpg",
       description: "FUNCTION Robotics Club at HIXS",
     },
 
     {
       id: 3,
-      type: "",
+      type: "image",
       image: "/p3.jpg",
       description:
         "Singapore International Math Olympiad Challenge 2024, Singapore",
     },
     {
       id: 4,
-      type: "",
+      type: "image",
       image: "/p4.jpg",
       description:
         "Wharton Global Youth Program, Product Design Academy 2025 University of Pennsylvania",
@@ -83,56 +83,56 @@ const GallerySection = () => {
 
     {
       id: 5,
-      type: "",
+      type: "image",
       image: "/p5.jpg",
       description: "F1 in Schools, Regionals 2024",
     },
     {
       id: 6,
-      type: "",
+      type: "image",
       image: "/p6.jpg",
       description: "WIMO, Final Round 2023, Kuala Lumpur, Malaysia",
     },
     {
       id: 7,
-      type: "",
+      type: "image",
       image: "/p7.jpg",
       description: "APOC 2024, FTC Sydney, Australia",
     },
     {
       id: 8,
-      type: "",
+      type: "image",
       image: "/p8.jpg",
       description: "TEENS OF GOD, Registered NGO",
     },
     {
       id: 9,
-      type: "",
+      type: "image",
       image: "/p9.jpg",
       description: "F1 in Schools, Nationals 2024",
     },
     {
       id: 10,
-      type: "",
+      type: "image",
       image: "/p10.jpg",
       description: "INGENIX, School STEM Society HIXS",
     },
     {
       id: 11,
-      type: "",
+      type: "video",
       video: "/v1.mp4",
       description: "Adjustable solar panel",
     },
     {
       id: 12,
-      type: "",
+      type: "video",
       video: "/v2.mp4",
       description:
         "Witnessing HRC in person to understand how it helps improve efficiency",
     },
     {
       id: 13,
-      type: "",
+      type: "video",
       video: "/v3.mp4",
       description: "Game prep for First Tech Challenge, APOC",
     },
@@ -209,10 +209,9 @@ const GallerySection = () => {
             }}
             className="mb-8"
           >
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-3 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-600 bg-clip-text text-transparent"></h1>
-            <p className="text-lg md:text-xl text-slate-600 font-medium">
+            <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-3 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-600 bg-clip-text text-transparent">
               Explore my latest work and creative projects
-            </p>
+            </h1>
           </div>
         </div>
       </div>
@@ -361,13 +360,6 @@ const GallerySection = () => {
                         </div>
                       </>
                     )}
-
-                    {/* Type Badge */}
-                    <div className="absolute top-4 right-4">
-                      <span className="bg-white/90 backdrop-blur-sm text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-lg">
-                        {item.type === "video" ? "VIDEO" : "IMAGE"}
-                      </span>
-                    </div>
                   </div>
 
                   {/* Description Below Image */}
@@ -438,11 +430,6 @@ const GallerySection = () => {
 
                 {/* Description */}
                 <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 w-full max-w-4xl">
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="bg-white/90 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">
-                      {fullscreenItem.type === "video" ? "VIDEO" : "IMAGE"}
-                    </span>
-                  </div>
                   <p className="text-white text-lg leading-relaxed">
                     {fullscreenItem.description}
                   </p>
