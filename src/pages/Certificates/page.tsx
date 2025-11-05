@@ -386,6 +386,17 @@ const CertificatesPage = () => {
       skills: [""],
       pdfUrl: "/c33.jpg",
     },
+    {
+      id: 34,
+      title: "Crest Gold Award",
+      issuer: "",
+      date: "",
+      category: "",
+      image: "/c35.jpg",
+      description: "",
+      skills: [""],
+      pdfUrl: "/c35.jpg",
+    },
   ];
 
   const filteredCertificates = certificates.filter((cert) => {
