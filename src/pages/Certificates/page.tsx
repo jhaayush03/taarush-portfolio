@@ -16,7 +16,7 @@ const CertificatesPage = () => {
   const handleDownloadAllCertificates = () => {
     const link = document.createElement("a");
     link.href = "/certificateamritrajlamba.pdf";
-    link.download = "Certificate_Amritra_Lamba.pdf";
+    link.download = "All_Certificates_Amritraj_Lamba.pdf";
     link.click();
   };
 
