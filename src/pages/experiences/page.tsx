@@ -74,18 +74,44 @@ const ExperiencesPage = () => {
     },
     {
       title: "Internship",
+      company: "Bajaj motors",
+      period: "August -October 2024",
+      location: "Gurugram",
+      description: "",
+      skills: [],
+      achievements: [
+        "Sustainability & EV Initiatives Contributor: Acquired knowledge of sustainable development, electrical vehicle supply chains (batteries, circuits etc.), scrap management, segregation, and mandatory practices relating to safety.",
+        "Also, contributed ideas in relation to the adoption of renewable energy, clean operations, andsustainability practices for both the production of EVs and the factory.",
+      ],
+    },
+    {
+      title: "Internship",
       company: "Vardan Envirolabs",
       period: "December 2024 - February 2025",
       location: "Gurugram",
       description: "",
       skills: [],
       achievements: [
-        "Worked in an EIA consultancy, performing labs tests on air and water samples and learning to operate professional instruments like spectrophotometers and gas analyzers.",
+        "Worked in an EIA consultancy, performing lab tests on air and water samples and learning to operate professional instruments like spectrophotometers and gas analyzers.",
         "Gained practical understanding of how data translates into impact-assessment reports that influence project approvals.",
-        "Used the knowledge from this experience to begin working on the sewage-detection lid project.",
-        "Recieved a certificate and recommendation letter from the lab director, validating both the internship and the project.",
+        "Used the knowledge from this experience to begin working on the sewage‐detection lid project.",
+        "Received a certificate and recommendation letter from the lab director, validating both the internship and the project.",
       ],
     },
+    {
+      title: "Internship",
+      company: "Ped Panchayat",
+      period: "August 2025-October 2025",
+       location: "Gurugram",
+      description: "",
+      skills: [],
+      achievements: [
+        "Environmental Data & Restoration Intern Built an online database of 60+ indigenous plants detailing medicinal uses, ecological traits, and seasonal growth.",
+        "Designed field-survey forms and produced region-specific reforestation maps.",
+        "Adopted by 5+ community groups, this system standardized data collection and improved planning to increase sapling survival across restoration sites.",
+      ],
+    },
+   
   ];
 
   return (
