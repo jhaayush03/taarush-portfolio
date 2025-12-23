@@ -97,7 +97,7 @@ const ResumePage = () => {
     {
       title: "Founder",
       company: "Sewage Suraksha",
-      period: "April 2024 - Present",
+      period: "December 2024 - present",
       type: "",
       details: [
         "Developed a sewage lid with multi-gas sensors; it is a low-cost retrofit ensuring safety of municipal workers.",
