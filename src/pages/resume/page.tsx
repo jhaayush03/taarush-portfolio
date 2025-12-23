@@ -201,8 +201,6 @@ const ResumePage = () => {
 
   const internships = [
     {
-<<<<<<< HEAD
-=======
       title: "Bajaj motors",
       company: "Intern",
       period: "August -October 2024",
@@ -213,7 +211,6 @@ const ResumePage = () => {
       ],
     },
     {
->>>>>>> 9c48f7d (Updated experiences page)
       title: "Vardan Envirolabs",
       company: "Summer Intern",
       period: "December 2024 - February 2025",
@@ -225,8 +222,6 @@ const ResumePage = () => {
         "Received a certificate and recommendation letter from the lab director, validating both the internship and the project.",
       ],
     },
-<<<<<<< HEAD
-=======
     {
       title: "Ped Panchayat",
       company: "Summer Intern",
@@ -238,7 +233,6 @@ const ResumePage = () => {
         "Adopted by 5+ community groups, this system standardized data collection and improved planning to increase sapling survival across restoration sites.",
       ],
     },
->>>>>>> 9c48f7d (Updated experiences page)
   ];
 
   const advancedCourses = [
