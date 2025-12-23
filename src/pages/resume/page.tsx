@@ -201,6 +201,19 @@ const ResumePage = () => {
 
   const internships = [
     {
+<<<<<<< HEAD
+=======
+      title: "Bajaj motors",
+      company: "Intern",
+      period: "August -October 2024",
+      type: "Gurugram",
+      details: [
+        "Sustainability & EV Initiatives Contributor: Acquired knowledge of sustainable development, electrical vehicle supply chains (batteries, circuits etc.), scrap management, segregation, and mandatory practices relating to safety.",
+        "Also, contributed ideas in relation to the adoption of renewable energy, clean operations, andsustainability practices for both the production of EVs and the factory.",
+      ],
+    },
+    {
+>>>>>>> 9c48f7d (Updated experiences page)
       title: "Vardan Envirolabs",
       company: "Summer Intern",
       period: "December 2024 - February 2025",
@@ -212,6 +225,20 @@ const ResumePage = () => {
         "Received a certificate and recommendation letter from the lab director, validating both the internship and the project.",
       ],
     },
+<<<<<<< HEAD
+=======
+    {
+      title: "Ped Panchayat",
+      company: "Summer Intern",
+      period: "August 2025-October 2025",
+      type: "Gurugram",
+      details: [
+        "Environmental Data & Restoration Intern Built an online database of 60+ indigenous plants detailing medicinal uses, ecological traits, and seasonal growth.",
+        "Designed field-survey forms and produced region-specific reforestation maps.",
+        "Adopted by 5+ community groups, this system standardized data collection and improved planning to increase sapling survival across restoration sites.",
+      ],
+    },
+>>>>>>> 9c48f7d (Updated experiences page)
   ];
 
   const advancedCourses = [
