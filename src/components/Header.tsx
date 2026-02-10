@@ -10,6 +10,7 @@ const Header = () => {
     { label: "Certificates", href: "/certificates" },
     { label: "Resume", href: "/resumes" },
     { label: "Research Papers", href: "/researchpaper" },
+    { label: "In The News", href: "/#news" },
   ];
 
   const handleNavigation = (href) => {

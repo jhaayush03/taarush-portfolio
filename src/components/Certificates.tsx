@@ -3,6 +3,13 @@ import { Newspaper, ExternalLink } from "lucide-react";
 
 const newsArticles = [
   {
+    title: "Edex Live",
+    date: "23th December 2025",
+    description: "",
+    link: "https://www.edexlive.com/opinion/student-invents-low-cost-technology-to-protect-sanitation-workers",
+    color: "from-blue-500 to-indigo-600",
+  },
+  {
     title: "FirstIndia",
     date: "9th August 2024",
     description: "",
