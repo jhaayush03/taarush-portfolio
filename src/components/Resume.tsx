@@ -6,7 +6,7 @@ const Resume = () => {
   const sectionRef = useRef(null);
 
   // Replace this with your actual PDF path
-  const resumePdfPath = "/resume-amrit.pdf";
+  const resumePdfPath = "/AmritrajLamba_Resume(Final).pdf";
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,7 +28,7 @@ const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resumePdfPath;
-    link.download = "Resume_Amritraj_Lamba.pdf";
+    link.download = "AmritrajLamba_Resume(Final).pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
